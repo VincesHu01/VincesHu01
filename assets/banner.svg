@@ -1,0 +1,18 @@
+<svg width="1200" height="220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0f0f1e"/>
+      <stop offset="50%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f0f1e" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0f0f1e" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="220" fill="url(#bg)"/>
+  <path d="M0,180 Q300,150 600,180 T1200,170 L1200,220 L0,220 Z" fill="#0f0f1e" opacity="0.4"/>
+  <path d="M0,195 Q300,170 600,195 T1200,190 L1200,220 L0,220 Z" fill="#0f0f1e" opacity="0.6"/>
+  <text x="600" y="110" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="64" font-weight="800" fill="#ffffff" text-anchor="middle">VincesHu</text>
+  <text x="600" y="155" font-family="'SF Mono', 'Fira Code', monospace" font-size="18" fill="#c4b5fd" text-anchor="middle">EVERYTHING YOU NEED IS IN AI</text>
+</svg>
