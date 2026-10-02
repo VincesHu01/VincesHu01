@@ -80,20 +80,23 @@ I'm **VincesHu (Hu Zhongyue)**, a Master's candidate at **Sun Yat-sen University
 
 <div align="center">
 
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=VincesHu01&show_icons=true&theme=tokyonight&bg_color=0d1117&title_color=8b5cf6&icon_color=ec4899&text_color=c9d1d9&border_radius=12&hide_border=true" />
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=VincesHu01&layout=compact&theme=tokyonight&bg_color=0d1117&title_color=8b5cf6&text_color=c9d1d9&border_radius=12&hide_border=true" />
+<!-- 卡片由 .github/workflows/readme-cards.yml 每天自动重新生成并提交，
+     README 只引用仓库内的静态 SVG，避免公共 vercel/heroku 实例被暂停时出现裂图 -->
+
+<img height="180" src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/stats.svg" alt="GitHub stats" />
+<img height="180" src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/top-langs.svg" alt="Top languages" />
 
 <br/>
 
-<img height="180" src="https://github-readme-streak-stats.herokuapp.com/?user=VincesHu01&theme=tokyonight&background=0d1117&ring=8b5cf6&fire=ec4899&currStreakLabel=8b5cf6&sideLabels=c9d1d9&dates=c9d1d9&border_radius=12" />
+<img height="180" src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/streak.svg" alt="Contribution streak" />
 
 <br/><br/>
 
-<img src="https://github-profile-trophy.vercel.app/?username=VincesHu01&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&row=1" />
+<img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/trophy.svg" alt="GitHub trophies" />
 
 <br/><br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=VincesHu01&bg_color=0d1117&color=8b5cf6&line=ec4899&point=fbbf24&area=true&hide_border=true&theme=tokyo-night" width="100%"/>
+<img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/activity.svg" alt="Contribution activity" width="100%"/>
 
 </div>
 
@@ -104,19 +107,19 @@ I'm **VincesHu (Hu Zhongyue)**, a Master's candidate at **Sun Yat-sen University
 <div align="center">
 
 <a href="https://github.com/VincesHu01/timeless-career-intelligence">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=VincesHu01&repo=timeless-career-intelligence&theme=tokyonight&bg_color=0d1117&title_color=8b5cf6&description_color=c9d1d9&border_color=8b5cf6&hide_border=true" />
+  <img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/pin-timeless-career-intelligence.svg" alt="timeless-career-intelligence" />
 </a>
 <a href="https://github.com/VincesHu01/ai-news-aggregator">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=VincesHu01&repo=ai-news-aggregator&theme=tokyonight&bg_color=0d1117&title_color=ec4899&description_color=c9d1d9&border_color=ec4899&hide_border=true" />
+  <img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/pin-ai-news-aggregator.svg" alt="ai-news-aggregator" />
 </a>
 
 <br/>
 
 <a href="https://github.com/VincesHu01/Apex-workbench">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=VincesHu01&repo=Apex-workbench&theme=tokyonight&bg_color=0d1117&title_color=22d3ee&description_color=c9d1d9&border_color=22d3ee&hide_border=true" />
+  <img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/pin-Apex-workbench.svg" alt="Apex-workbench" />
 </a>
 <a href="https://github.com/VincesHu01/douji">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=VincesHu01&repo=douji&theme=tokyonight&bg_color=0d1117&title_color=fbbf24&description_color=c9d1d9&border_color=fbbf24&hide_border=true" />
+  <img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/pin-douji.svg" alt="douji" />
 </a>
 
 </div>
