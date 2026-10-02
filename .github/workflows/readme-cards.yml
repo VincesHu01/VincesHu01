@@ -1,0 +1,86 @@
+name: Refresh README cards
+
+# 每天 UTC 16:20（北京时间 00:20）把第三方统计卡片抓成静态 SVG 提交回仓库，
+# 这样 README 只引用仓库内的静态文件（经 jsDelivr CDN 分发），
+# 不再依赖运行时去请求 vercel.app / herokuapp 这类会被限流或墙掉的公共实例。
+on:
+  schedule:
+    - cron: "20 16 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/readme-cards.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch card SVGs
+        run: |
+          set -u
+          mkdir -p assets/cards
+
+          fetch() { # $1 = 输出文件名, $2 = URL
+            local out="$1" url="$2" code
+            for i in 1 2 3 4 5; do
+              code=$(curl -sS -L -m 45 \
+                       -H "User-Agent: readme-card-refresh" \
+                       -o "$out.tmp" -w "%{http_code}" "$url" || echo 000)
+              if [ "$code" = "200" ] && grep -qi "<svg" "$out.tmp" \
+                 && [ "$(wc -c < "$out.tmp")" -gt 1000 ]; then
+                mv "$out.tmp" "$out"
+                echo "OK   $out"
+                return 0
+              fi
+              echo "retry $i: $out (http=$code)"
+              sleep 6
+            done
+            rm -f "$out.tmp"
+            echo "SKIP $out —— 抓取失败，保留上一次生成的文件"
+            return 0
+          }
+
+          BASE="https://github-readme-stats.vercel.app/api?username=VincesHu01&theme=tokyonight&bg_color=0d1117&text_color=c9d1d9&border_radius=12&hide_border=true"
+
+          fetch assets/cards/stats.svg \
+            "${BASE}&show_icons=true&title_color=8b5cf6&icon_color=ec4899"
+
+          fetch assets/cards/top-langs.svg \
+            "https://github-readme-stats.vercel.app/api/top-langs/?username=VincesHu01&layout=compact&theme=tokyonight&bg_color=0d1117&title_color=8b5cf6&text_color=c9d1d9&border_radius=12&hide_border=true"
+
+          fetch assets/cards/streak.svg \
+            "https://streak-stats.demolab.com/?user=VincesHu01&theme=tokyonight&background=0d1117&ring=8b5cf6&fire=ec4899&currStreakLabel=8b5cf6&sideLabels=c9d1d9&dates=c9d1d9&border_radius=12"
+
+          fetch assets/cards/trophy.svg \
+            "https://github-profile-trophy.vercel.app/?username=VincesHu01&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&row=1"
+
+          fetch assets/cards/activity.svg \
+            "https://github-readme-activity-graph.vercel.app/graph?username=VincesHu01&bg_color=0d1117&color=8b5cf6&line=ec4899&point=fbbf24&area=true&hide_border=true&theme=tokyo-night"
+
+          pin() { # $1 = repo, $2 = accent color
+            fetch "assets/cards/pin-$1.svg" \
+              "https://github-readme-stats.vercel.app/api/pin/?username=VincesHu01&repo=$1&theme=tokyonight&bg_color=0d1117&title_color=$2&description_color=c9d1d9&border_color=$2&hide_border=true"
+          }
+          pin timeless-career-intelligence 8b5cf6
+          pin ai-news-aggregator ec4899
+          pin Apex-workbench 22d3ee
+          pin douji fbbf24
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/cards
+          if git diff --cached --quiet; then
+            echo "卡片无变化，跳过提交"
+            exit 0
+          fi
+          git commit -m "chore: refresh README stat cards"
+          git push origin HEAD:main
