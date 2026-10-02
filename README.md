@@ -1,48 +1,47 @@
-<!--
-  VincesHu · GitHub Profile README
-  部署仓库：VincesHu01/VincesHu01（与用户名同名）
--->
-
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0f1e,50:7c3aed,100:ec4899&height=220&section=header&text=VincesHu&fontSize=64&fontColor=ffffff&animation=fadeIn&desc=EVERYTHING%20YOU%20NEED%20IS%20IN%20AI&descAlign=62&descSize=18" alt="banner" width="100%"/>
+<!-- ▍WAVING BANNER (no overlapping desc) -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0f1e,50:7c3aed,100:ec4899&height=200&section=header&text=VincesHu&fontSize=64&fontColor=ffffff&animation=fadeIn" width="100%"/>
 
+<!-- ▍CIRCULAR AVATAR w/ neon ring, overlapping banner -->
+<p>
+  <a href="https://github.com/VincesHu01">
+    <img src="https://images.weserv.nl/?url=raw.githubusercontent.com/VincesHu01/VincesHu01/main/assets/avatar.jpg&w=220&h=220&fit=cover&mask=circle&ring=4&ring-color=8b5cf6" width="160"/>
+  </a>
+</p>
+
+<!-- ▍TYPING TERMINAL -->
 <a href="https://github.com/VincesHu01">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&pause=1000&center=true&vCenter=true&width=720&height=60&lines=%3E+whoami;%3E+%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6+%C2%B7+Sun+Yat-sen+University;%3E+AI+%E5%88%9B%E4%B8%9A%E8%80%85+%C3%97+%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86;%3E+TikTok+Shop+18mo+%E5%AE%9E%E4%B9%A0%E5%85%9F;%3E+build+%E2%86%92+ship+%E2%86%92+repeat;" alt="typing" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1100&center=true&vCenter=true&width=720&height=50&lines=%3E+whoami;%3E+Sun+Yat-sen+University+MSc+Candidate;%3E+AI+Product+Manager+%C3%97+Growth+Builder;%3E+ex-TikTok+Shop+%C2%B7+ex-Poizon;%3E+build+%E2%86%92+ship+%E2%86%92+repeat;" alt="typing" />
 </a>
 
 <br/>
 
 <img src="https://komarev.com/ghpvc/?username=VincesHu01&style=for-the-badge&color=8b5cf6&label=PROFILE+VIEWS" />
-<img src="https://img.shields.io/badge/location-Zhuhai%20%C2%B7%20Guangdong-fbbf24?style=for-the-badge&logo=apple&logoColor=white" />
-<img src="https://img.shields.io/badge/bio-EVERYTHING%20YOU%20NEED%20IS%20IN%20AI-ec4899?style=for-the-badge" />
 
 </div>
 
-## 🧠 &nbsp;关于我 &nbsp;·&nbsp; `About`
+## 🧑‍💻 &nbsp;About
 
-```bash
-$ cat ~/vinces.json
-```
+I'm **VincesHu (Hu Zhongyue)**, a Master's candidate at **Sun Yat-sen University** who lives at the intersection of AI, product, and growth. I've shipped real products at **TikTok Shop** (6 mo) and **Poizon** (4 mo), and I care about turning fuzzy user problems into working software — especially where LLMs meet messy real-world workflows.
 
-| 字段 | 内容 |
-|---|---|
-| `name` | **胡中岳** · VincesHu |
-| `edu`  | 贵州大学 本科 → **中山大学** 硕士（珠海） |
-| `role` | 互联网产品 / AI 应用 / 增长 |
-| `past` | **TikTok Shop** 18 个月实习 · 字节跳动 · 得物 |
-| `focus` | LLM 产品化、跨境电商、数据驱动决策 |
-| `believes` | 代码是杠杆，产品是放大器，AI 是新的生产资料 |
+**Currently focused on:** Product Management (AI / Strategy / Monetization / Platform) · Strategy Operations · E-commerce Operations
 
-> *"Curiosity writes the code, coffee keeps it running.
->  I spend most of my time shipping tiny tools that make life a little more
->  deterministic — and turning fuzzy ideas into working software."*
-
-## 🛠️ &nbsp;技术栈 &nbsp;·&nbsp; `Tech Stack`
+<br/>
 
 <div align="center">
 
-### 🌐 工程 & 语言
+<img src="https://img.shields.io/badge/TikTok_Shop-Product_%E2%80%85Growth%C2%A0%C2%B7%C2%A06_mo-010101?style=for-the-badge&logo=tiktok&logoColor=white" />
+<img src="https://img.shields.io/badge/Poizon%20%28DeWu%29-Operations%C2%A0%C2%B7%C2%A04_mo-FF6A39?style=for-the-badge&logo=shopify&logoColor=white" />
+<img src="https://img.shields.io/badge/SYSU-MSc%C2%A0Candidate-8b5cf6?style=for-the-badge&logo=minutemailer&logoColor=white" />
+
+</div>
+
+## 🛠️ &nbsp;Tech Stack
+
+<div align="center">
+
+### 🌐 Languages
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Swift](https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=swift&logoColor=white)
@@ -51,14 +50,18 @@ $ cat ~/vinces.json
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 ![Shell](https://img.shields.io/badge/Shell-121011?style=flat-square&logo=gnubash&logoColor=white)
 
-### 🤖 AI & 数据
-![LLM](https://img.shields.io/badge/LLM%20%E5%BA%94%E7%94%A8-6366f1?style=flat-square&logo=openai&logoColor=white)
+### 🤖 AI / ML / Data
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
-![SmartPLS](https://img.shields.io/badge/SmartPLS-0ea5e9?style=flat-square&logo=tableau&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
+![CUDA](https://img.shields.io/badge/CUDA-76B900?style=flat-square&logo=nvidia&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=sqlite&logoColor=white)
 
-### 🚀 工具 & 平台
+### 🚀 Tools & Platforms
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![macOS](https://img.shields.io/badge/macOS-000000?style=flat-square&logo=apple&logoColor=white)
@@ -68,7 +71,7 @@ $ cat ~/vinces.json
 
 </div>
 
-## 📊 &nbsp;数据面板 &nbsp;·&nbsp; `Dashboard`
+## 📊 &nbsp;Dashboard
 
 <div align="center">
 
@@ -83,9 +86,13 @@ $ cat ~/vinces.json
 
 <img src="https://github-profile-trophy.vercel.app/?username=VincesHu01&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&row=1" />
 
+<br/><br/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=VincesHu01&bg_color=0d1117&color=8b5cf6&line=ec4899&point=fbbf24&area=true&hide_border=true&theme=tokyo-night" width="100%"/>
+
 </div>
 
-## 🌟 &nbsp;精选项目 &nbsp;·&nbsp; `Pinned`
+## 🌟 &nbsp;Selected Projects
 
 <div align="center">
 
@@ -107,14 +114,17 @@ $ cat ~/vinces.json
 
 </div>
 
-### 📌 项目速写
+### 📌 Why these exist
 
-- **[`timeless-career-intelligence`](https://github.com/VincesHu01/timeless-career-intelligence)** — 中国互联网产品 / 运营岗位情报、能力透视与 AI 学习系统（TypeScript）
-- **[`ai-news-aggregator`](https://github.com/VincesHu01/ai-news-aggregator)** — AI 驱动的新闻聚合与预测平台，LLM 摘要 + 多源抓取（TypeScript + Python + Docker）
-- **[`Apex-workbench`](https://github.com/VincesHu01/Apex-workbench)** — Neo-Brutalism 风格的本地生活追踪工作台，单文件、零框架、localStorage 即开即用
-- **[`douji`](https://github.com/VincesHu01/douji)** — 本地优先的 macOS 原生小工具，秒级检索豆包历史会话并跳转指定轮次（Swift）
+- 🧭 **[timeless-career-intelligence](https://github.com/VincesHu01/timeless-career-intelligence)** — *Job seekers in China's internet industry fly blind on what PM/Ops roles actually demand. This system turns scattered hiring signals into a clear ability map and a focused learning path.*
 
-## 🐍 &nbsp;贡献蛇 &nbsp;·&nbsp; `Contribution Graph`
+- 🗞️ **[ai-news-aggregator](https://github.com/VincesHu01/ai-news-aggregator)** — *Information overload kills focus. LLMs summarize and forecast the news so you get the 1% that actually matters, in 30 seconds.*
+
+- ⚡ **[Apex-workbench](https://github.com/VincesHu01/Apex-workbench)** — *People who hate bloated SaaS still want a beautiful life dashboard. This single-file, zero-framework app ships that without an account, server, or subscription.*
+
+- 🐦 **[douji](https://github.com/VincesHu01/douji)** — *We've all stared at Doubao saying "I know I solved something great here last week." This macOS tool indexes every local chat turn and jumps you straight to it.*
+
+## 🐍 &nbsp;Contribution Graph
 
 <div align="center">
 
@@ -122,21 +132,20 @@ $ cat ~/vinces.json
 
 </div>
 
-## 🌱 &nbsp;此刻在做什么 &nbsp;·&nbsp; `Now`
+## 🌱 &nbsp;Currently
 
 ```yaml
 currently:
-  - 📚 中山大学 · 硕士在读
-  - 🤖 折腾 AI Agent / LLM 应用落地
-  - 🛠️ 把日常重复劳动封装成自己的小工具
-  - 📈 持续观察跨境电商 & 互联网产品岗机会
+  - 📚 Pursuing my Master's degree, head down
+  - 🤖 Building AI Agents & LLM applications in my spare time
+  - 🛠️ Designing AI plugins & skill systems that actually ship
+  - 📈 Tracking product & cross-border e-commerce opportunities
 coffee: ☕ x 3 / day
-motto:  "EVERYTHING YOU NEED IS IN AI"
 ```
 
 <div align="center">
 
-### 🔗 &nbsp;Connect with me
+### 🔗 &nbsp;Connect
 
 <a href="https://github.com/VincesHu01">
   <img src="https://img.shields.io/badge/GitHub-VincesHu01-181717?style=for-the-badge&logo=github&logoColor=white" />
