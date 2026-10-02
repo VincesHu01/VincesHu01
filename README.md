@@ -1,7 +1,7 @@
 <div align="center">
 
-<!-- ▍WAVING BANNER (no overlapping desc) -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0f1e,50:7c3aed,100:ec4899&height=200&section=header&text=VincesHu&fontSize=64&fontColor=ffffff&animation=fadeIn" width="100%"/>
+<!-- ▍BANNER (static SVG via jsDelivr, China-friendly) -->
+<img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/banner.svg" width="100%"/>
 
 <!-- ▍AVATAR (jsDelivr CDN for China access) -->
 <p>
@@ -10,14 +10,14 @@
   </a>
 </p>
 
-<!-- ▍TYPING TERMINAL -->
+<!-- ▍STATUS CARD (static SVG) -->
 <a href="https://github.com/VincesHu01">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1100&center=true&vCenter=true&width=720&height=50&lines=%3E+whoami;%3E+Sun+Yat-sen+University+MSc+Candidate;%3E+AI+Product+Manager+%C3%97+Growth+Builder;%3E+ex-TikTok+Shop+%C2%B7+ex-Poizon;%3E+build+%E2%86%92+ship+%E2%86%92+repeat;" alt="typing" />
+  <img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/status.svg" alt="status" />
 </a>
 
 <br/>
 
-<img src="https://komarev.com/ghpvc/?username=VincesHu01&style=for-the-badge&color=8b5cf6&label=PROFILE+VIEWS" />
+<img src="https://img.shields.io/badge/profile%20views-_-8b5cf6?style=for-the-badge&color=8b5cf6&labelColor=0d1117" />
 
 </div>
 
@@ -159,7 +159,7 @@ coffee: ☕ x 3 / day
 
 <br/><br/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ec4899,50:7c3aed,100:0f0f1e&height=120&section=footer&text=Thanks%20for%20scrolling&fontSize=22&fontColor=ffffff&animation=fadeIn" width="100%"/>
+---
 
 <sub>© 2026 VincesHu · Built with ☕ and too much AI</sub>
 
