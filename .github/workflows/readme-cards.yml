@@ -1,8 +1,9 @@
 name: Refresh README cards
 
-# 每天 UTC 16:20（北京时间 00:20）把第三方统计卡片抓成静态 SVG 提交回仓库，
-# 这样 README 只引用仓库内的静态文件（经 jsDelivr CDN 分发），
-# 不再依赖运行时去请求 vercel.app / herokuapp 这类会被限流或墙掉的公共实例。
+# 把第三方统计卡片抓成静态 SVG 提交回仓库，README 只引用仓库内的静态文件
+# （经 jsDelivr CDN 分发）。这些公共 Vercel 实例随时会被作者暂停或限流
+# （github-profile-trophy / activity-graph 目前就处于 DEPLOYMENT_PAUSED），
+# 静态化之后 README 不会再出现裂图。
 on:
   schedule:
     - cron: "20 16 * * *"
@@ -11,6 +12,7 @@ on:
     branches: [main]
     paths:
       - ".github/workflows/readme-cards.yml"
+      - ".github/scripts/activity_graph.py"
 
 permissions:
   contents: write
@@ -27,51 +29,76 @@ jobs:
           set -u
           mkdir -p assets/cards
 
-          fetch() { # $1 = 输出文件名, $2 = URL
-            local out="$1" url="$2" code
-            for i in 1 2 3 4 5; do
-              code=$(curl -sS -L -m 45 \
-                       -H "User-Agent: readme-card-refresh" \
-                       -o "$out.tmp" -w "%{http_code}" "$url" || echo 000)
-              if [ "$code" = "200" ] && grep -qi "<svg" "$out.tmp" \
-                 && [ "$(wc -c < "$out.tmp")" -gt 1000 ]; then
-                mv "$out.tmp" "$out"
-                echo "OK   $out"
-                return 0
-              fi
-              echo "retry $i: $out (http=$code)"
-              sleep 6
+          # fetch <输出文件> <url1> [url2 ...]  —— 依次尝试，成功即停
+          fetch() {
+            local out="$1"; shift
+            local url code
+            for url in "$@"; do
+              for i in 1 2 3; do
+                code=$(curl -sS -L -m 45 \
+                         -H "User-Agent: readme-card-refresh" \
+                         -o "$out.tmp" -w "%{http_code}" "$url" || echo 000)
+                if [ "$code" = "200" ] && grep -qi "<svg" "$out.tmp" \
+                   && [ "$(wc -c < "$out.tmp")" -gt 1000 ]; then
+                  mv "$out.tmp" "$out"
+                  echo "OK   $out"
+                  return 0
+                fi
+                sleep 6
+              done
+              echo "   ...$url 不可用，换下一个源"
             done
             rm -f "$out.tmp"
-            echo "SKIP $out —— 抓取失败，保留上一次生成的文件"
+            echo "SKIP $out —— 所有源都失败，保留上一次生成的文件"
             return 0
           }
 
-          BASE="https://github-readme-stats.vercel.app/api?username=VincesHu01&theme=tokyonight&bg_color=0d1117&text_color=c9d1d9&border_radius=12&hide_border=true"
+          GRS="https://github-readme-stats.vercel.app"
+          GRS_FAST="https://github-readme-stats-fast.vercel.app"
+          T_COMMON="theme=tokyonight&bg_color=0d1117&text_color=c9d1d9&border_radius=12&hide_border=true"
 
           fetch assets/cards/stats.svg \
-            "${BASE}&show_icons=true&title_color=8b5cf6&icon_color=ec4899"
+            "${GRS}/api?username=VincesHu01&show_icons=true&title_color=8b5cf6&icon_color=ec4899&${T_COMMON}" \
+            "${GRS_FAST}/api?username=VincesHu01&show_icons=true&title_color=8b5cf6&icon_color=ec4899&${T_COMMON}"
 
           fetch assets/cards/top-langs.svg \
-            "https://github-readme-stats.vercel.app/api/top-langs/?username=VincesHu01&layout=compact&theme=tokyonight&bg_color=0d1117&title_color=8b5cf6&text_color=c9d1d9&border_radius=12&hide_border=true"
+            "${GRS}/api/top-langs/?username=VincesHu01&layout=compact&title_color=8b5cf6&${T_COMMON}" \
+            "${GRS_FAST}/api/top-langs/?username=VincesHu01&layout=compact&title_color=8b5cf6&${T_COMMON}"
 
+          # herokuapp 旧域名已退役，官方现域名是 demolab
           fetch assets/cards/streak.svg \
             "https://streak-stats.demolab.com/?user=VincesHu01&theme=tokyonight&background=0d1117&ring=8b5cf6&fire=ec4899&currStreakLabel=8b5cf6&sideLabels=c9d1d9&dates=c9d1d9&border_radius=12"
 
+          # 原 github-profile-trophy.vercel.app 已被作者暂停，改用社区镜像
           fetch assets/cards/trophy.svg \
+            "https://github-profile-trophy.screw-hand.vercel.app/?username=VincesHu01&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&row=1" \
             "https://github-profile-trophy.vercel.app/?username=VincesHu01&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&row=1"
-
-          fetch assets/cards/activity.svg \
-            "https://github-readme-activity-graph.vercel.app/graph?username=VincesHu01&bg_color=0d1117&color=8b5cf6&line=ec4899&point=fbbf24&area=true&hide_border=true&theme=tokyo-night"
 
           pin() { # $1 = repo, $2 = accent color
             fetch "assets/cards/pin-$1.svg" \
-              "https://github-readme-stats.vercel.app/api/pin/?username=VincesHu01&repo=$1&theme=tokyonight&bg_color=0d1117&title_color=$2&description_color=c9d1d9&border_color=$2&hide_border=true"
+              "${GRS}/api/pin/?username=VincesHu01&repo=$1&theme=tokyonight&bg_color=0d1117&title_color=$2&description_color=c9d1d9&border_color=$2&hide_border=true" \
+              "${GRS_FAST}/api/pin/?username=VincesHu01&repo=$1&theme=tokyonight&bg_color=0d1117&title_color=$2&description_color=c9d1d9&border_color=$2&hide_border=true"
           }
           pin timeless-career-intelligence 8b5cf6
           pin ai-news-aggregator ec4899
           pin Apex-workbench 22d3ee
           pin douji fbbf24
+
+      - name: Build activity graph
+        run: |
+          # github-readme-activity-graph 的公共实例已暂停，改为自己渲染
+          curl -sS -m 45 -H "User-Agent: readme-card-refresh" \
+            -o /tmp/contrib.json \
+            "https://github-contributions-api.jogruber.de/v4/VincesHu01?y=last" || true
+          if grep -q '"contributions"' /tmp/contrib.json; then
+            python3 .github/scripts/activity_graph.py /tmp/contrib.json > /tmp/activity.svg
+            if [ -s /tmp/activity.svg ] && grep -q "<svg" /tmp/activity.svg; then
+              mv /tmp/activity.svg assets/cards/activity.svg
+              echo "OK   assets/cards/activity.svg"
+            fi
+          else
+            echo "SKIP activity.svg —— 贡献数据抓取失败，保留上一次生成的文件"
+          fi
 
       - name: Commit if changed
         run: |
