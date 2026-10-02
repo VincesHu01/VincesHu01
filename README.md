@@ -3,19 +3,26 @@
 <!-- ▍BANNER -->
 <img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/banner.svg" width="100%"/>
 
-<!-- ▍CIRCULAR AVATAR with gradient ring -->
+<!-- ▍ANIMATED AVATAR: rotating gradient dashed ring + color cycling -->
 <p>
   <a href="https://github.com/VincesHu01">
-    <img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/avatar-circle.svg" width="160"/>
+    <img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/avatar-anim.svg" width="160"/>
   </a>
 </p>
 
-<!-- ▍STATUS CARD -->
+<!-- ▍SPARKLES row -->
+<img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/sparkles.svg" />
+
+<br/>
+
+<!-- ▍ANIMATED TERMINAL CARD with blinking cursor -->
 <a href="https://github.com/VincesHu01">
-  <img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/status.svg" alt="status" />
+  <img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/typing-card.svg" alt="terminal" />
 </a>
 
 </div>
+
+<img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/wave.svg" width="100%"/>
 
 ## 🧑‍💻 &nbsp;About
 
@@ -67,6 +74,8 @@ I'm **VincesHu (Hu Zhongyue)**, a Master's candidate at **Sun Yat-sen University
 
 </div>
 
+<img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/wave.svg" width="100%"/>
+
 ## 📊 &nbsp;Dashboard
 
 <div align="center">
@@ -87,6 +96,8 @@ I'm **VincesHu (Hu Zhongyue)**, a Master's candidate at **Sun Yat-sen University
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=VincesHu01&bg_color=0d1117&color=8b5cf6&line=ec4899&point=fbbf24&area=true&hide_border=true&theme=tokyo-night" width="100%"/>
 
 </div>
+
+<img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/wave.svg" width="100%"/>
 
 ## 🌟 &nbsp;Selected Projects
 
@@ -127,6 +138,8 @@ I'm **VincesHu (Hu Zhongyue)**, a Master's candidate at **Sun Yat-sen University
 <img alt="snake" src="https://raw.githubusercontent.com/VincesHu01/VincesHu01/output/github-contribution-grid-snake-dark.svg" width="100%" />
 
 </div>
+
+<img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/wave.svg" width="100%"/>
 
 ## 🌱 &nbsp;Currently
 
