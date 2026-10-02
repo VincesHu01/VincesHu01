@@ -3,10 +3,10 @@
 <!-- ▍WAVING BANNER (no overlapping desc) -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0f1e,50:7c3aed,100:ec4899&height=200&section=header&text=VincesHu&fontSize=64&fontColor=ffffff&animation=fadeIn" width="100%"/>
 
-<!-- ▍CIRCULAR AVATAR w/ neon ring, overlapping banner -->
+<!-- ▍AVATAR (jsDelivr CDN for China access) -->
 <p>
   <a href="https://github.com/VincesHu01">
-    <img src="https://images.weserv.nl/?url=raw.githubusercontent.com/VincesHu01/VincesHu01/main/assets/avatar.jpg&w=220&h=220&fit=cover&mask=circle&ring=4&ring-color=8b5cf6" width="160"/>
+    <img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/avatar.jpg" width="160" style="border-radius:50%"/>
   </a>
 </p>
 
