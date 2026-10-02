@@ -1,23 +1,19 @@
 <div align="center">
 
-<!-- ▍BANNER (static SVG via jsDelivr, China-friendly) -->
+<!-- ▍BANNER -->
 <img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/banner.svg" width="100%"/>
 
-<!-- ▍AVATAR (jsDelivr CDN for China access) -->
+<!-- ▍CIRCULAR AVATAR with gradient ring -->
 <p>
   <a href="https://github.com/VincesHu01">
-    <img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/avatar.jpg" width="160" style="border-radius:50%"/>
+    <img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/avatar-circle.svg" width="160"/>
   </a>
 </p>
 
-<!-- ▍STATUS CARD (static SVG) -->
+<!-- ▍STATUS CARD -->
 <a href="https://github.com/VincesHu01">
   <img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/status.svg" alt="status" />
 </a>
-
-<br/>
-
-<img src="https://img.shields.io/badge/profile%20views-_-8b5cf6?style=for-the-badge&color=8b5cf6&labelColor=0d1117" />
 
 </div>
 
@@ -71,50 +67,15 @@ I'm **VincesHu (Hu Zhongyue)**, a Master's candidate at **Sun Yat-sen University
 
 </div>
 
-## 📊 &nbsp;Dashboard
+## 📊 &nbsp;Commit Streak
 
 <div align="center">
 
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=VincesHu01&show_icons=true&theme=tokyonight&bg_color=0d1117&title_color=8b5cf6&icon_color=ec4899&text_color=c9d1d9&border_radius=12&hide_border=true" />
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=VincesHu01&layout=compact&theme=tokyonight&bg_color=0d1117&title_color=8b5cf6&text_color=c9d1d9&border_radius=12&hide_border=true" />
-
-<br/>
-
 <img height="180" src="https://github-readme-streak-stats.herokuapp.com/?user=VincesHu01&theme=tokyonight&background=0d1117&ring=8b5cf6&fire=ec4899&currStreakLabel=8b5cf6&sideLabels=c9d1d9&dates=c9d1d9&border_radius=12" />
-
-<br/><br/>
-
-<img src="https://github-profile-trophy.vercel.app/?username=VincesHu01&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&row=1" />
-
-<br/><br/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=VincesHu01&bg_color=0d1117&color=8b5cf6&line=ec4899&point=fbbf24&area=true&hide_border=true&theme=tokyo-night" width="100%"/>
 
 </div>
 
 ## 🌟 &nbsp;Selected Projects
-
-<div align="center">
-
-<a href="https://github.com/VincesHu01/timeless-career-intelligence">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=VincesHu01&repo=timeless-career-intelligence&theme=tokyonight&bg_color=0d1117&title_color=8b5cf6&description_color=c9d1d9&border_color=8b5cf6&hide_border=true" />
-</a>
-<a href="https://github.com/VincesHu01/ai-news-aggregator">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=VincesHu01&repo=ai-news-aggregator&theme=tokyonight&bg_color=0d1117&title_color=ec4899&description_color=c9d1d9&border_color=ec4899&hide_border=true" />
-</a>
-
-<br/>
-
-<a href="https://github.com/VincesHu01/Apex-workbench">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=VincesHu01&repo=Apex-workbench&theme=tokyonight&bg_color=0d1117&title_color=22d3ee&description_color=c9d1d9&border_color=22d3ee&hide_border=true" />
-</a>
-<a href="https://github.com/VincesHu01/douji">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=VincesHu01&repo=douji&theme=tokyonight&bg_color=0d1117&title_color=fbbf24&description_color=c9d1d9&border_color=fbbf24&hide_border=true" />
-</a>
-
-</div>
-
-### 📌 Why these exist
 
 - 🧭 **[timeless-career-intelligence](https://github.com/VincesHu01/timeless-career-intelligence)** — *Job seekers in China's internet industry fly blind on what PM/Ops roles actually demand. This system turns scattered hiring signals into a clear ability map and a focused learning path.*
 
@@ -124,7 +85,7 @@ I'm **VincesHu (Hu Zhongyue)**, a Master's candidate at **Sun Yat-sen University
 
 - 🐦 **[douji](https://github.com/VincesHu01/douji)** — *We've all stared at Doubao saying "I know I solved something great here last week." This macOS tool indexes every local chat turn and jumps you straight to it.*
 
-## 🐍 &nbsp;Contribution Graph
+## 🐍 &nbsp;Contribution Snake
 
 <div align="center">
 
