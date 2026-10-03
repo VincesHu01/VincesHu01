@@ -122,25 +122,17 @@ I'm **VincesHu (Hu Zhongyue)**, a Master's candidate at **Sun Yat-sen University
 
 <div align="center">
 
-<a href="https://github.com/VincesHu01/timeless-career-intelligence">
-  <img src="assets/cards/pin-timeless-career-intelligence-light.svg#gh-light-mode-only" alt="timeless-career-intelligence" />
-  <img src="assets/cards/pin-timeless-career-intelligence.svg#gh-dark-mode-only" alt="timeless-career-intelligence" />
-</a>
-<a href="https://github.com/VincesHu01/ai-news-aggregator">
-  <img src="assets/cards/pin-ai-news-aggregator-light.svg#gh-light-mode-only" alt="ai-news-aggregator" />
-  <img src="assets/cards/pin-ai-news-aggregator.svg#gh-dark-mode-only" alt="ai-news-aggregator" />
-</a>
+<a href="https://github.com/VincesHu01/timeless-career-intelligence#gh-light-mode-only"><img src="assets/cards/pin-timeless-career-intelligence-light.svg" alt="timeless-career-intelligence" /></a>
+<a href="https://github.com/VincesHu01/timeless-career-intelligence#gh-dark-mode-only"><img src="assets/cards/pin-timeless-career-intelligence.svg" alt="timeless-career-intelligence" /></a>
+<a href="https://github.com/VincesHu01/ai-news-aggregator#gh-light-mode-only"><img src="assets/cards/pin-ai-news-aggregator-light.svg" alt="ai-news-aggregator" /></a>
+<a href="https://github.com/VincesHu01/ai-news-aggregator#gh-dark-mode-only"><img src="assets/cards/pin-ai-news-aggregator.svg" alt="ai-news-aggregator" /></a>
 
 <br/>
 
-<a href="https://github.com/VincesHu01/Apex-workbench">
-  <img src="assets/cards/pin-Apex-workbench-light.svg#gh-light-mode-only" alt="Apex-workbench" />
-  <img src="assets/cards/pin-Apex-workbench.svg#gh-dark-mode-only" alt="Apex-workbench" />
-</a>
-<a href="https://github.com/VincesHu01/douji">
-  <img src="assets/cards/pin-douji-light.svg#gh-light-mode-only" alt="douji" />
-  <img src="assets/cards/pin-douji.svg#gh-dark-mode-only" alt="douji" />
-</a>
+<a href="https://github.com/VincesHu01/Apex-workbench#gh-light-mode-only"><img src="assets/cards/pin-Apex-workbench-light.svg" alt="Apex-workbench" /></a>
+<a href="https://github.com/VincesHu01/Apex-workbench#gh-dark-mode-only"><img src="assets/cards/pin-Apex-workbench.svg" alt="Apex-workbench" /></a>
+<a href="https://github.com/VincesHu01/douji#gh-light-mode-only"><img src="assets/cards/pin-douji-light.svg" alt="douji" /></a>
+<a href="https://github.com/VincesHu01/douji#gh-dark-mode-only"><img src="assets/cards/pin-douji.svg" alt="douji" /></a>
 
 </div>
 
