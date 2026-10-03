@@ -1,4 +1,4 @@
-<svg width="720" height="140" xmlns="http://www.w3.org/2000/svg">
+<svg width="720" height="166" xmlns="http://www.w3.org/2000/svg">
   <style>
     @media (prefers-color-scheme: light) {
       .card { fill: #ffffff; stroke: #d0d7de; }
@@ -7,7 +7,7 @@
       .cursor { fill: #db2777; }
     }
   </style>
-  <rect class="card" width="720" height="140" rx="12" fill="#0d1117" stroke="#1e293b" stroke-width="1"/>
+  <rect class="card" width="720" height="166" rx="12" fill="#0d1117" stroke="#1e293b" stroke-width="1"/>
   <!-- terminal dots -->
   <circle cx="20" cy="20" r="4" fill="#ef4444"/>
   <circle cx="35" cy="20" r="4" fill="#fbbf24"/>
@@ -15,9 +15,10 @@
   <text class="prompt" x="20" y="55" font-family="'SF Mono','Fira Code',monospace" font-size="16" fill="#8b5cf6">$ whoami</text>
   <text class="body-text" x="20" y="80" font-family="'SF Mono','Fira Code',monospace" font-size="15" fill="#c9d1d9">Sun Yat-sen University MSc · AI PM × Growth</text>
   <text class="body-text" x="20" y="105" font-family="'SF Mono','Fira Code',monospace" font-size="15" fill="#c9d1d9">ex-TikTok Shop · ex-Poizon · building in public</text>
+  <text class="body-text" x="20" y="130" font-family="'SF Mono','Fira Code',monospace" font-size="15" fill="#c9d1d9">latest: PPT color engine · academic delivery skill</text>
   <!-- blinking cursor -->
-  <rect class="cursor" x="20" y="115" width="10" height="16" fill="#ec4899">
+  <rect class="cursor" x="20" y="140" width="10" height="16" fill="#ec4899">
     <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
   </rect>
-  <text class="cursor" x="38" y="128" font-family="'SF Mono','Fira Code',monospace" font-size="15" fill="#ec4899">_</text>
+  <text class="cursor" x="38" y="153" font-family="'SF Mono','Fira Code',monospace" font-size="15" fill="#ec4899">_</text>
 </svg>
