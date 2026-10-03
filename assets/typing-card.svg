@@ -1,24 +1,19 @@
-<svg width="720" height="166" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    @media (prefers-color-scheme: light) {
-      .card { fill: #ffffff; stroke: #d0d7de; }
-      .prompt { fill: #7c3aed; }
-      .body-text { fill: #1f2328; }
-      .cursor { fill: #db2777; }
-    }
-  </style>
-  <rect class="card" width="720" height="166" rx="12" fill="#0d1117" stroke="#1e293b" stroke-width="1"/>
-  <!-- terminal dots -->
-  <circle cx="20" cy="20" r="4" fill="#ef4444"/>
-  <circle cx="35" cy="20" r="4" fill="#fbbf24"/>
-  <circle cx="50" cy="20" r="4" fill="#22c55e"/>
-  <text class="prompt" x="20" y="55" font-family="'SF Mono','Fira Code',monospace" font-size="16" fill="#8b5cf6">$ whoami</text>
-  <text class="body-text" x="20" y="80" font-family="'SF Mono','Fira Code',monospace" font-size="15" fill="#c9d1d9">Sun Yat-sen University MSc · AI PM × Growth</text>
-  <text class="body-text" x="20" y="105" font-family="'SF Mono','Fira Code',monospace" font-size="15" fill="#c9d1d9">ex-TikTok Shop · ex-Poizon · building in public</text>
-  <text class="body-text" x="20" y="130" font-family="'SF Mono','Fira Code',monospace" font-size="15" fill="#c9d1d9">latest: PPT color engine · academic delivery skill</text>
-  <!-- blinking cursor -->
-  <rect class="cursor" x="20" y="140" width="10" height="16" fill="#ec4899">
-    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
-  </rect>
-  <text class="cursor" x="38" y="153" font-family="'SF Mono','Fira Code',monospace" font-size="15" fill="#ec4899">_</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="230" viewBox="0 0 760 230" role="img" aria-labelledby="title desc">
+  <title id="title">VincesHu identity command center</title><desc id="desc">An animated, theme-aware profile console for an AI product builder.</desc>
+  <defs>
+    <linearGradient id="edge" x1="0" x2="1"><stop stop-color="#8b5cf6"/><stop offset=".48" stop-color="#ec4899"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop class="glass1" stop-color="#fff" stop-opacity=".10"/><stop class="glass2" offset="1" stop-color="#fff" stop-opacity=".025"/></linearGradient>
+    <pattern id="grid" width="25" height="25" patternUnits="userSpaceOnUse"><path class="grid" d="M25 0H0V25" fill="none" stroke="#94a3b8" stroke-opacity=".055"/></pattern>
+    <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <style>
+      text{font-family:Inter,-apple-system,'Segoe UI',sans-serif}.mono{font-family:'SFMono-Regular',Consolas,monospace}.bg{fill:#070914}.panel{fill:url(#glass);stroke:#334155}.primary{fill:#f8fafc}.secondary{fill:#aab6ca}.muted{fill:#748198}.grid{stroke:#94a3b8}.label{font-size:9px;font-weight:800;letter-spacing:1.8px}.scan{animation:scan 5s linear infinite}.pulse{animation:pulse 2.2s ease-in-out infinite}.cursor{animation:blink 1s steps(2,end) infinite}@keyframes scan{from{transform:translateX(-160px)}to{transform:translateX(900px)}}@keyframes pulse{50%{opacity:.25}}@keyframes blink{50%{opacity:0}}
+      @media(prefers-color-scheme:light){.bg{fill:#fff}.panel{fill:#f8fafc;stroke:#d0d7de}.primary{fill:#24292f}.secondary{fill:#475569}.muted{fill:#6e7781}.grid{stroke:#7c3aed;stroke-opacity:.045}.glass1{stop-color:#7c3aed;stop-opacity:.05}.glass2{stop-color:#0891b2;stop-opacity:.015}}
+    </style>
+  </defs>
+  <rect class="bg" width="760" height="230" rx="18"/><rect width="760" height="230" rx="18" fill="url(#grid)"/><rect x="1" y="1" width="758" height="228" rx="17" fill="none" stroke="url(#edge)" stroke-width="2"/>
+  <rect class="panel" x="18" y="16" width="724" height="36" rx="10"/><circle cx="37" cy="34" r="4" fill="#34d399" filter="url(#glow)" class="pulse"/><text x="50" y="37" class="label primary">IDENTITY NODE // VERIFIED</text><text x="721" y="37" text-anchor="end" class="mono muted" font-size="10">VINCESHU.OS · ONLINE</text>
+  <g transform="translate(26 73)"><rect class="panel" width="160" height="128" rx="14"/><circle cx="80" cy="47" r="28" fill="none" stroke="url(#edge)" stroke-width="2"/><circle cx="80" cy="47" r="20" fill="#8b5cf6" fill-opacity=".16"/><text x="80" y="54" text-anchor="middle" font-size="19" font-weight="900" fill="#a78bfa">VH</text><text x="80" y="89" text-anchor="middle" class="primary" font-size="15" font-weight="800">VINCESHU</text><text x="80" y="108" text-anchor="middle" class="mono muted" font-size="9">AI × PRODUCT × GROWTH</text></g>
+  <g transform="translate(204 73)"><text class="label" fill="#a78bfa" x="0" y="10">CURRENT VECTOR</text><text class="primary" x="0" y="38" font-size="21" font-weight="850">Building useful intelligence</text><text class="secondary" x="0" y="61" font-size="13">from messy, real-world workflows.</text><path d="M0 76H518" stroke="url(#edge)" stroke-opacity=".55"/>
+    <g transform="translate(0 90)"><rect width="148" height="30" rx="15" fill="#8b5cf6" fill-opacity=".13" stroke="#8b5cf6" stroke-opacity=".45"/><text x="74" y="19" text-anchor="middle" font-size="10" font-weight="700" fill="#8b5cf6">SYSU · MSc</text></g><g transform="translate(158 90)"><rect width="166" height="30" rx="15" fill="#ec4899" fill-opacity=".11" stroke="#ec4899" stroke-opacity=".4"/><text x="83" y="19" text-anchor="middle" font-size="10" font-weight="700" fill="#ec4899">ex-TIKTOK · POIZON</text></g><g transform="translate(334 90)"><rect width="184" height="30" rx="15" fill="#22d3ee" fill-opacity=".11" stroke="#22d3ee" stroke-opacity=".4"/><text x="92" y="19" text-anchor="middle" font-size="10" font-weight="700" fill="#0891b2">SHIP → LEARN → REPEAT</text></g>
+  </g><rect x="0" y="0" width="140" height="2" fill="url(#edge)" opacity=".8" class="scan"/><rect x="718" y="191" width="8" height="14" fill="#ec4899" class="cursor"/><text x="703" y="201" text-anchor="end" class="mono muted" font-size="9">READY</text>
 </svg>

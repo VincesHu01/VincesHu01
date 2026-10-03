@@ -77,17 +77,13 @@ I have shipped real product and operations work at **TikTok Shop** and **Poizon*
 
 <div align="center">
 
-<a href="https://github.com/VincesHu01/timeless-career-intelligence#gh-light-mode-only"><img src="assets/cards/pin-timeless-career-intelligence-light.svg" alt="timeless-career-intelligence" /></a>
-<a href="https://github.com/VincesHu01/timeless-career-intelligence#gh-dark-mode-only"><img src="assets/cards/pin-timeless-career-intelligence.svg" alt="timeless-career-intelligence" /></a>
-<a href="https://github.com/VincesHu01/ai-news-aggregator#gh-light-mode-only"><img src="assets/cards/pin-ai-news-aggregator-light.svg" alt="ai-news-aggregator" /></a>
-<a href="https://github.com/VincesHu01/ai-news-aggregator#gh-dark-mode-only"><img src="assets/cards/pin-ai-news-aggregator.svg" alt="ai-news-aggregator" /></a>
+<a href="https://github.com/VincesHu01/timeless-career-intelligence"><img width="49%" src="assets/cards/repo-timeless-career-intelligence.svg" alt="timeless-career-intelligence live repository metadata" /></a>
+<a href="https://github.com/VincesHu01/ai-news-aggregator"><img width="49%" src="assets/cards/repo-ai-news-aggregator.svg" alt="ai-news-aggregator live repository metadata" /></a>
 
 <br/>
 
-<a href="https://github.com/VincesHu01/Apex-workbench#gh-light-mode-only"><img src="assets/cards/pin-Apex-workbench-light.svg" alt="Apex-workbench" /></a>
-<a href="https://github.com/VincesHu01/Apex-workbench#gh-dark-mode-only"><img src="assets/cards/pin-Apex-workbench.svg" alt="Apex-workbench" /></a>
-<a href="https://github.com/VincesHu01/douji#gh-light-mode-only"><img src="assets/cards/pin-douji-light.svg" alt="douji" /></a>
-<a href="https://github.com/VincesHu01/douji#gh-dark-mode-only"><img src="assets/cards/pin-douji.svg" alt="douji" /></a>
+<a href="https://github.com/VincesHu01/Apex-workbench"><img width="49%" src="assets/cards/repo-Apex-workbench.svg" alt="Apex-workbench live repository metadata" /></a>
+<a href="https://github.com/VincesHu01/douji"><img width="49%" src="assets/cards/repo-douji.svg" alt="douji live repository metadata" /></a>
 
 </div>
 
