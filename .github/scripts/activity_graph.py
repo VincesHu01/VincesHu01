@@ -5,7 +5,9 @@
 （github-readme-activity-graph 的公共 Vercel 实例已被作者暂停，所以自己画，
 生成的 SVG 会被提交回仓库，README 只引用静态文件。）
 
-用法：python3 activity_graph.py contrib.json > activity.svg
+用法：
+    python3 activity_graph.py contrib.json dark  > activity.svg
+    python3 activity_graph.py contrib.json light > activity-light.svg
 """
 import json
 import sys
@@ -13,11 +15,12 @@ from datetime import date
 
 W, H = 880, 210
 PAD_L, PAD_R, PAD_T, PAD_B = 18, 18, 46, 34
-BG = "#0d1117"
-LINE = "#8b5cf6"
-TITLE = "#c9d1d9"
-MUTED = "#6e7681"
 FONT = "Segoe UI, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif"
+
+THEMES = {
+    "dark": dict(bg="#0d1117", line="#8b5cf6", title="#c9d1d9", muted="#6e7681"),
+    "light": dict(bg="#ffffff", line="#7c3aed", title="#1f2328", muted="#8b949e"),
+}
 
 
 def load(path):
@@ -66,6 +69,11 @@ def catmull(points):
 
 
 def main():
+    theme_name = sys.argv[2] if len(sys.argv) > 2 else "dark"
+    theme = THEMES.get(theme_name, THEMES["dark"])
+    BG, LINE = theme["bg"], theme["line"]
+    TITLE, MUTED = theme["title"], theme["muted"]
+
     days = load(sys.argv[1])
     values, labels = weekly(days)
     total = sum(v for _, v in days)

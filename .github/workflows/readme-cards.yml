@@ -4,6 +4,11 @@ name: Refresh README cards
 # （经 jsDelivr CDN 分发）。这些公共 Vercel 实例随时会被作者暂停或限流
 # （github-profile-trophy / activity-graph 目前就处于 DEPLOYMENT_PAUSED），
 # 静态化之后 README 不会再出现裂图。
+#
+# 每张卡片生成两套，README 用 <picture> + prefers-color-scheme 按主题切换：
+#   xxx.svg        → 深色版（GitHub dark 主题）
+#   xxx-light.svg  → 浅色版（GitHub light 主题）
+# 浅色版抓取失败时会自动用深色版兜底，任何主题下都不会裂图。
 on:
   schedule:
     - cron: "20 16 * * *"
@@ -53,36 +58,66 @@ jobs:
             return 0
           }
 
+          # fallback <浅色文件> <深色文件> —— 浅色版没抓到就用深色版兜底，避免裂图
+          fallback() {
+            if [ -s "$1" ]; then
+              echo "OK   $1"
+            else
+              cp "$2" "$1"
+              echo "WARN $1 抓取失败，已用深色版兜底"
+            fi
+          }
+
           GRS="https://github-readme-stats.vercel.app"
           GRS_FAST="https://github-readme-stats-fast.vercel.app"
           T_COMMON="theme=tokyonight&bg_color=0d1117&text_color=c9d1d9&border_radius=12&hide_border=true"
+          L_COMMON="theme=default&bg_color=ffffff&text_color=1f2328&border_radius=12&hide_border=false&border_color=d0d7de"
 
           fetch assets/cards/stats.svg \
             "${GRS}/api?username=VincesHu01&show_icons=true&title_color=8b5cf6&icon_color=ec4899&${T_COMMON}" \
             "${GRS_FAST}/api?username=VincesHu01&show_icons=true&title_color=8b5cf6&icon_color=ec4899&${T_COMMON}"
+          fetch assets/cards/stats-light.svg \
+            "${GRS}/api?username=VincesHu01&show_icons=true&title_color=7c3aed&icon_color=db2777&${L_COMMON}" \
+            "${GRS_FAST}/api?username=VincesHu01&show_icons=true&title_color=7c3aed&icon_color=db2777&${L_COMMON}"
+          fallback assets/cards/stats-light.svg assets/cards/stats.svg
 
           fetch assets/cards/top-langs.svg \
             "${GRS}/api/top-langs/?username=VincesHu01&layout=compact&title_color=8b5cf6&${T_COMMON}" \
             "${GRS_FAST}/api/top-langs/?username=VincesHu01&layout=compact&title_color=8b5cf6&${T_COMMON}"
+          fetch assets/cards/top-langs-light.svg \
+            "${GRS}/api/top-langs/?username=VincesHu01&layout=compact&title_color=7c3aed&${L_COMMON}" \
+            "${GRS_FAST}/api/top-langs/?username=VincesHu01&layout=compact&title_color=7c3aed&${L_COMMON}"
+          fallback assets/cards/top-langs-light.svg assets/cards/top-langs.svg
 
           # herokuapp 旧域名已退役，官方现域名是 demolab
           fetch assets/cards/streak.svg \
             "https://streak-stats.demolab.com/?user=VincesHu01&theme=tokyonight&background=0d1117&ring=8b5cf6&fire=ec4899&currStreakLabel=8b5cf6&sideLabels=c9d1d9&dates=c9d1d9&border_radius=12"
+          fetch assets/cards/streak-light.svg \
+            "https://streak-stats.demolab.com/?user=VincesHu01&theme=default&background=ffffff&ring=7c3aed&fire=db2777&currStreakLabel=7c3aed&sideLabels=57606a&dates=57606a&border_radius=12"
+          fallback assets/cards/streak-light.svg assets/cards/streak.svg
 
           # 原 github-profile-trophy.vercel.app 已被作者暂停，改用社区镜像
           fetch assets/cards/trophy.svg \
             "https://github-profile-trophy.screw-hand.vercel.app/?username=VincesHu01&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&row=1" \
             "https://github-profile-trophy.vercel.app/?username=VincesHu01&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&row=1"
+          fetch assets/cards/trophy-light.svg \
+            "https://github-profile-trophy.screw-hand.vercel.app/?username=VincesHu01&theme=flat&no-frame=true&no-bg=true&margin-w=8&row=1" \
+            "https://github-profile-trophy.vercel.app/?username=VincesHu01&theme=flat&no-frame=true&no-bg=true&margin-w=8&row=1"
+          fallback assets/cards/trophy-light.svg assets/cards/trophy.svg
 
-          pin() { # $1 = repo, $2 = accent color
+          pin() { # $1 = repo, $2 = 深色强调色, $3 = 浅色强调色
             fetch "assets/cards/pin-$1.svg" \
-              "${GRS}/api/pin/?username=VincesHu01&repo=$1&theme=tokyonight&bg_color=0d1117&title_color=$2&description_color=c9d1d9&border_color=$2&hide_border=true" \
-              "${GRS_FAST}/api/pin/?username=VincesHu01&repo=$1&theme=tokyonight&bg_color=0d1117&title_color=$2&description_color=c9d1d9&border_color=$2&hide_border=true"
+              "${GRS}/api/pin/?username=VincesHu01&repo=$1&theme=tokyonight&bg_color=0d1117&text_color=c9d1d9&title_color=$2&description_color=c9d1d9&border_color=$2&hide_border=true" \
+              "${GRS_FAST}/api/pin/?username=VincesHu01&repo=$1&theme=tokyonight&bg_color=0d1117&text_color=c9d1d9&title_color=$2&description_color=c9d1d9&border_color=$2&hide_border=true"
+            fetch "assets/cards/pin-$1-light.svg" \
+              "${GRS}/api/pin/?username=VincesHu01&repo=$1&theme=default&bg_color=ffffff&text_color=57606a&title_color=$3&description_color=57606a&border_color=d0d7de&hide_border=false" \
+              "${GRS_FAST}/api/pin/?username=VincesHu01&repo=$1&theme=default&bg_color=ffffff&text_color=57606a&title_color=$3&description_color=57606a&border_color=d0d7de&hide_border=false"
+            fallback "assets/cards/pin-$1-light.svg" "assets/cards/pin-$1.svg"
           }
-          pin timeless-career-intelligence 8b5cf6
-          pin ai-news-aggregator ec4899
-          pin Apex-workbench 22d3ee
-          pin douji fbbf24
+          pin timeless-career-intelligence 8b5cf6 6d28d9
+          pin ai-news-aggregator ec4899 db2777
+          pin Apex-workbench 22d3ee 0e7490
+          pin douji fbbf24 b45309
 
       - name: Build activity graph
         run: |
@@ -91,13 +126,18 @@ jobs:
             -o /tmp/contrib.json \
             "https://github-contributions-api.jogruber.de/v4/VincesHu01?y=last" || true
           if grep -q '"contributions"' /tmp/contrib.json; then
-            python3 .github/scripts/activity_graph.py /tmp/contrib.json > /tmp/activity.svg
-            if [ -s /tmp/activity.svg ] && grep -q "<svg" /tmp/activity.svg; then
-              mv /tmp/activity.svg assets/cards/activity.svg
-              echo "OK   assets/cards/activity.svg"
-            fi
+            for variant in dark light; do
+              if [ "$variant" = "light" ]; then out="assets/cards/activity-light.svg"; else out="assets/cards/activity.svg"; fi
+              python3 .github/scripts/activity_graph.py /tmp/contrib.json "$variant" > /tmp/activity-$variant.svg
+              if [ -s /tmp/activity-$variant.svg ] && grep -q "<svg" /tmp/activity-$variant.svg; then
+                mv /tmp/activity-$variant.svg "$out"
+                echo "OK   $out"
+              fi
+            done
+            [ -s assets/cards/activity-light.svg ] || cp assets/cards/activity.svg assets/cards/activity-light.svg
           else
             echo "SKIP activity.svg —— 贡献数据抓取失败，保留上一次生成的文件"
+            [ -s assets/cards/activity-light.svg ] || cp assets/cards/activity.svg assets/cards/activity-light.svg
           fi
 
       - name: Commit if changed
