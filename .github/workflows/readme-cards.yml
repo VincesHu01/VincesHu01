@@ -100,9 +100,11 @@ jobs:
           fetch assets/cards/trophy.svg \
             "https://github-profile-trophy.screw-hand.vercel.app/?username=VincesHu01&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&row=1" \
             "https://github-profile-trophy.vercel.app/?username=VincesHu01&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&row=1"
+          # 浅色版用 default 主题（白底 / 黑字 / 灰正文）。
+          # 注意这里不能加 no-bg，否则白底被去掉、文字在白底 GitHub 上会看不见。
           fetch assets/cards/trophy-light.svg \
-            "https://github-profile-trophy.screw-hand.vercel.app/?username=VincesHu01&theme=flat&no-frame=true&no-bg=true&margin-w=8&row=1" \
-            "https://github-profile-trophy.vercel.app/?username=VincesHu01&theme=flat&no-frame=true&no-bg=true&margin-w=8&row=1"
+            "https://github-profile-trophy.screw-hand.vercel.app/?username=VincesHu01&theme=default&no-frame=true&margin-w=8&row=1" \
+            "https://github-profile-trophy.vercel.app/?username=VincesHu01&theme=default&no-frame=true&margin-w=8&row=1"
           fallback assets/cards/trophy-light.svg assets/cards/trophy.svg
 
           pin() { # $1 = repo, $2 = 深色强调色, $3 = 浅色强调色

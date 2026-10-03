@@ -1,18 +1,30 @@
 <svg width="1200" height="220" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @media (prefers-color-scheme: light) {
+      .bg-1 { stop-color: #f5f3ff; }
+      .bg-2 { stop-color: #c4b5fd; }
+      .bg-3 { stop-color: #f9a8d7; }
+      .wave-1 { stop-color: #ffffff; }
+      .wave-2 { stop-color: #ffffff; stop-opacity: 0.35; }
+      .ripple { fill: #ffffff; }
+      .title { fill: #3b0764; }
+      .tagline { fill: #6d28d9; }
+    }
+  </style>
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0f0f1e"/>
-      <stop offset="50%" stop-color="#7c3aed"/>
-      <stop offset="100%" stop-color="#ec4899"/>
+      <stop class="bg-1" offset="0%" stop-color="#0f0f1e"/>
+      <stop class="bg-2" offset="50%" stop-color="#7c3aed"/>
+      <stop class="bg-3" offset="100%" stop-color="#ec4899"/>
     </linearGradient>
     <linearGradient id="wave" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#0f0f1e" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#0f0f1e" stop-opacity="0.3"/>
+      <stop class="wave-1" offset="0%" stop-color="#0f0f1e" stop-opacity="0"/>
+      <stop class="wave-2" offset="100%" stop-color="#0f0f1e" stop-opacity="0.3"/>
     </linearGradient>
   </defs>
   <rect width="1200" height="220" fill="url(#bg)"/>
-  <path d="M0,180 Q300,150 600,180 T1200,170 L1200,220 L0,220 Z" fill="#0f0f1e" opacity="0.4"/>
-  <path d="M0,195 Q300,170 600,195 T1200,190 L1200,220 L0,220 Z" fill="#0f0f1e" opacity="0.6"/>
-  <text x="600" y="110" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="64" font-weight="800" fill="#ffffff" text-anchor="middle">VincesHu</text>
-  <text x="600" y="155" font-family="'SF Mono', 'Fira Code', monospace" font-size="18" fill="#c4b5fd" text-anchor="middle">EVERYTHING YOU NEED IS IN AI</text>
+  <path class="ripple" d="M0,180 Q300,150 600,180 T1200,170 L1200,220 L0,220 Z" fill="#0f0f1e" opacity="0.4"/>
+  <path class="ripple" d="M0,195 Q300,170 600,195 T1200,190 L1200,220 L0,220 Z" fill="#0f0f1e" opacity="0.6"/>
+  <text class="title" x="600" y="110" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="64" font-weight="800" fill="#ffffff" text-anchor="middle">VincesHu</text>
+  <text class="tagline" x="600" y="155" font-family="'SF Mono', 'Fira Code', monospace" font-size="18" fill="#c4b5fd" text-anchor="middle">EVERYTHING YOU NEED IS IN AI</text>
 </svg>
