@@ -87,8 +87,8 @@ I'm **VincesHu (Hu Zhongyue)**, a Master's candidate at **Sun Yat-sen University
      用 GitHub 官方的 #gh-light-mode-only / #gh-dark-mode-only 后缀按主题显示。
      注意：GitHub 的 HTML 过滤器会剥掉 <picture>/<source>，只能用这种写法。 -->
 
-<img height="180" src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/stats-light.svg#gh-light-mode-only" alt="GitHub stats" />
-<img height="180" src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/stats.svg#gh-dark-mode-only" alt="GitHub stats" />
+<img height="180" src="assets/cards/stats-light.svg#gh-light-mode-only" alt="GitHub stats" />
+<img height="180" src="assets/cards/stats.svg#gh-dark-mode-only" alt="GitHub stats" />
 <img height="180" src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/top-langs-light.svg#gh-light-mode-only" alt="Top languages" />
 <img height="180" src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/top-langs.svg#gh-dark-mode-only" alt="Top languages" />
 
