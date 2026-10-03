@@ -1,8 +1,8 @@
 
       <svg
         width="400"
-        height="150"
-        viewBox="0 0 400 150"
+        height="140"
+        viewBox="0 0 400 140"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         role="img"
@@ -13,7 +13,7 @@
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
-            fill: #8b5cf6;
+            fill: #0e7490;
             animation: fadeInAnimation 0.8s ease-in-out forwards;
           }
           @supports(-moz-appearance: auto) {
@@ -21,9 +21,9 @@
             .header { font-size: 15.5px; }
           }
           
-    .description { font: 400 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: #c9d1d9 }
-    .gray { font: 400 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: #c9d1d9 }
-    .icon { fill: #bf91f3 }
+    .description { font: 400 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: #57606a }
+    .gray { font: 400 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: #57606a }
+    .icon { fill: #4c71f2 }
     .badge { font: 600 11px 'Segoe UI', Ubuntu, Sans-Serif; }
     .badge rect { opacity: 0.2 }
   
@@ -58,10 +58,10 @@
           y="0.5"
           rx="4.5"
           height="99%"
-          stroke="#8b5cf6"
+          stroke="#d0d7de"
           width="399"
-          fill="#0d1117"
-          stroke-opacity="0"
+          fill="#ffffff"
+          stroke-opacity="1"
         />
 
         
@@ -87,7 +87,7 @@
         y="0"
         class="header"
         data-testid="header"
-      >timeless-career-intelligence</text>
+      >Apex-workbench</text>
     </g>
       </g>
     
@@ -100,16 +100,16 @@
     
 
     <text class="description" x="25" y="-5">
-      <tspan dy="1.2em" x="25">Timeless &#8212;</tspan><tspan dy="1.2em" x="25">&#20013;&#22269;&#20114;&#32852;&#32593;&#20135;&#21697;&#19982;&#36816;&#33829;&#23703;&#20301;&#24773;&#25253;&#12289;&#33021;&#21147;&#36879;&#35270;&#19982;</tspan><tspan dy="1.2em" x="25">AI &#23398;&#20064;&#31995;&#32479;</tspan>
+      <tspan dy="1.2em" x="25">APEX &#8212; a Neo-Brutalism personal life-tracking</tspan><tspan dy="1.2em" x="25">workbench. Single-file, zero-framework, localStorage-only</tspan>
     </text>
 
-    <g transform="translate(30, 75)">
+    <g transform="translate(30, 65)">
       <g transform="translate(0, 0)">
     <g data-testid="primary-lang">
-      <circle data-testid="lang-color" cx="0" cy="-5" r="6" fill="#3178c6" />
-      <text data-testid="lang-name" class="gray" x="15">TypeScript</text>
+      <circle data-testid="lang-color" cx="0" cy="-5" r="6" fill="#e34c26" />
+      <text data-testid="lang-name" class="gray" x="15">HTML</text>
     </g>
-    </g><g transform="translate(82.24375, 0)"><g transform="translate(0, 0)">
+    </g><g transform="translate(57.625, 0)"><g transform="translate(0, 0)">
       <svg
         class="icon"
         y="-12"
