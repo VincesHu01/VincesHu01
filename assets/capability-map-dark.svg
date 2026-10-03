@@ -1,0 +1,28 @@
+<svg width="900" height="340" viewBox="0 0 900 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="VincesHu capability constellation">
+  <style>
+    
+    .orbit{animation:spin 22s linear infinite;transform-origin:450px 170px}.orbit2{animation:spin2 17s linear infinite;transform-origin:450px 170px}.node{animation:pulse 2.8s ease-in-out infinite}@keyframes spin{to{transform:rotate(360deg)}}@keyframes spin2{to{transform:rotate(-360deg)}}@keyframes pulse{50%{opacity:.55}}
+  </style>
+  <defs>
+    <radialGradient id="space"><stop stop-color="#25104b"/><stop offset=".55" stop-color="#0d1117"/><stop offset="1" stop-color="#070a12"/></radialGradient>
+    <linearGradient id="core" x1="0" x2="1"><stop stop-color="#8b5cf6"/><stop offset=".5" stop-color="#ec4899"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+    <filter id="glow2" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect class="bg" width="900" height="340" rx="18" fill="url(#space)"/>
+  <g class="grid" stroke="#8b5cf6" opacity=".08"><path d="M30 60H870M30 120H870M30 180H870M30 240H870M30 300H870M150 20V320M300 20V320M450 20V320M600 20V320M750 20V320"/></g>
+  <ellipse class="orbit" cx="450" cy="170" rx="262" ry="112" fill="none" stroke="#8b5cf6" stroke-width="1.5" stroke-dasharray="8 10" opacity=".7"/>
+  <ellipse class="orbit2" cx="450" cy="170" rx="188" ry="76" fill="none" stroke="#ec4899" stroke-width="1.5" stroke-dasharray="5 9" opacity=".75"/>
+  <circle class="core" cx="450" cy="170" r="65" fill="url(#core)" filter="url(#glow2)"/>
+  <text x="450" y="159" text-anchor="middle" font-family="-apple-system,'Segoe UI',sans-serif" font-size="17" font-weight="800" fill="#fff">AI PRODUCT</text>
+  <text x="450" y="183" text-anchor="middle" font-family="-apple-system,'Segoe UI',sans-serif" font-size="17" font-weight="800" fill="#fff">ENGINEERING</text>
+  <text x="450" y="205" text-anchor="middle" font-family="monospace" font-size="10" fill="#f5f3ff">product · code · growth</text>
+  <g font-family="-apple-system,'Segoe UI',sans-serif" font-size="13" font-weight="650">
+    <g transform="translate(93 60)"><circle class="node" cx="14" cy="14" r="10" fill="#8b5cf6"/><text class="label" x="34" y="18" fill="#e2e8f0">Product Strategy</text></g>
+    <g transform="translate(668 54)"><circle class="node" cx="14" cy="14" r="10" fill="#ec4899"/><text class="label" x="34" y="18" fill="#e2e8f0">LLM Applications</text></g>
+    <g transform="translate(80 255)"><circle class="node" cx="14" cy="14" r="10" fill="#22d3ee"/><text class="label" x="34" y="18" fill="#e2e8f0">Growth &amp; Operations</text></g>
+    <g transform="translate(676 256)"><circle class="node" cx="14" cy="14" r="10" fill="#fbbf24"/><text class="label" x="34" y="18" fill="#e2e8f0">UX Systems</text></g>
+    <g transform="translate(350 30)"><circle class="node" cx="14" cy="14" r="8" fill="#34d399"/><text class="label" x="31" y="18" fill="#e2e8f0">Data / ML</text></g>
+    <g transform="translate(352 286)"><circle class="node" cx="14" cy="14" r="8" fill="#fb7185"/><text class="label" x="31" y="18" fill="#e2e8f0">Automation</text></g>
+  </g>
+  <text class="sub" x="450" y="326" text-anchor="middle" font-family="monospace" font-size="12" fill="#94a3b8">Python · TypeScript · Swift · SQL · Docker · Figma · Git</text>
+</svg>

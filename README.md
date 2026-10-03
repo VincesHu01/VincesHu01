@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.svg" width="100%" alt="VincesHu — AI product builder" />
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg"><img src="assets/banner-light.svg" width="100%" alt="VincesHu — AI product builder" /></picture>
 
 <a href="https://github.com/VincesHu01"><img src="assets/avatar-anim.svg" width="118" alt="VincesHu animated avatar" /></a>
 
@@ -10,7 +10,7 @@
 
 <br/>
 
-<a href="https://github.com/VincesHu01"><img src="assets/identity-command-center.svg" width="760" alt="VincesHu identity command center" /></a>
+<a href="https://github.com/VincesHu01"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/identity-command-center-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/identity-command-center-light.svg"><img src="assets/identity-command-center-light.svg" width="760" alt="VincesHu identity command center" /></picture></a>
 
 <br/><br/>
 
@@ -24,7 +24,7 @@
 
 </div>
 
-<img src="assets/wave.svg" width="100%" alt="section divider" />
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/wave-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/wave-light.svg"><img src="assets/wave-light.svg" width="100%" alt="section divider" /></picture>
 
 <a id="about"></a>
 
@@ -53,7 +53,7 @@ I have shipped real product and operations work at **TikTok Shop** and **Poizon*
 <table>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/VincesHu01/wps-ppt-recolor"><img src="assets/build-wps.svg" width="100%" alt="PPT Recolor Engine" /></a>
+      <a href="https://github.com/VincesHu01/wps-ppt-recolor"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/build-wps-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/build-wps-light.svg"><img src="assets/build-wps-light.svg" width="100%" alt="PPT Recolor Engine" /></picture></a>
       <br/>
       <b>PPT Recolor Engine</b><br/>
       Reads the palette a deck actually uses, then remaps pasted diagrams, gradients and charts without flattening their visual hierarchy.
@@ -61,7 +61,7 @@ I have shipped real product and operations work at **TikTok Shop** and **Poizon*
       <a href="https://github.com/VincesHu01/wps-ppt-recolor"><code>VIEW SOURCE →</code></a>
     </td>
     <td width="50%" valign="top">
-      <a href="https://github.com/VincesHu01/academic-deliverables"><img src="assets/build-academic.svg" width="100%" alt="Academic Deliverables Codex Skill" /></a>
+      <a href="https://github.com/VincesHu01/academic-deliverables"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/build-academic-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/build-academic-light.svg"><img src="assets/build-academic-light.svg" width="100%" alt="Academic Deliverables Codex Skill" /></picture></a>
       <br/>
       <b>Academic Deliverables Skill</b><br/>
       Turns 43 threads of real revision feedback into reusable production rules and deterministic PPTX/DOCX quality checks.
@@ -77,13 +77,13 @@ I have shipped real product and operations work at **TikTok Shop** and **Poizon*
 
 <div align="center">
 
-<a href="https://github.com/VincesHu01/timeless-career-intelligence"><img width="49%" src="assets/cards/repo-timeless-career-intelligence.svg" alt="timeless-career-intelligence live repository metadata" /></a>
-<a href="https://github.com/VincesHu01/ai-news-aggregator"><img width="49%" src="assets/cards/repo-ai-news-aggregator.svg" alt="ai-news-aggregator live repository metadata" /></a>
+<a href="https://github.com/VincesHu01/timeless-career-intelligence"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/repo-timeless-career-intelligence-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cards/repo-timeless-career-intelligence-light.svg"><img width="49%" src="assets/cards/repo-timeless-career-intelligence-light.svg" alt="timeless-career-intelligence live repository metadata" /></picture></a>
+<a href="https://github.com/VincesHu01/ai-news-aggregator"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/repo-ai-news-aggregator-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cards/repo-ai-news-aggregator-light.svg"><img width="49%" src="assets/cards/repo-ai-news-aggregator-light.svg" alt="ai-news-aggregator live repository metadata" /></picture></a>
 
 <br/>
 
-<a href="https://github.com/VincesHu01/Apex-workbench"><img width="49%" src="assets/cards/repo-Apex-workbench.svg" alt="Apex-workbench live repository metadata" /></a>
-<a href="https://github.com/VincesHu01/douji"><img width="49%" src="assets/cards/repo-douji.svg" alt="douji live repository metadata" /></a>
+<a href="https://github.com/VincesHu01/Apex-workbench"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/repo-Apex-workbench-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cards/repo-Apex-workbench-light.svg"><img width="49%" src="assets/cards/repo-Apex-workbench-light.svg" alt="Apex-workbench live repository metadata" /></picture></a>
+<a href="https://github.com/VincesHu01/douji"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/repo-douji-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cards/repo-douji-light.svg"><img width="49%" src="assets/cards/repo-douji-light.svg" alt="douji live repository metadata" /></picture></a>
 
 </div>
 
@@ -97,7 +97,7 @@ I have shipped real product and operations work at **TikTok Shop** and **Poizon*
 
 </details>
 
-<img src="assets/wave.svg" width="100%" alt="section divider" />
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/wave-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/wave-light.svg"><img src="assets/wave-light.svg" width="100%" alt="section divider" /></picture>
 
 <a id="capability-map"></a>
 
@@ -105,7 +105,7 @@ I have shipped real product and operations work at **TikTok Shop** and **Poizon*
 
 <div align="center">
 
-<img src="assets/capability-map.svg" width="100%" alt="AI product engineering capability constellation" />
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/capability-map-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/capability-map-light.svg"><img src="assets/capability-map-light.svg" width="100%" alt="AI product engineering capability constellation" /></picture>
 
 </div>
 
@@ -151,25 +151,20 @@ I have shipped real product and operations work at **TikTok Shop** and **Poizon*
 
 <div align="center">
 
-<img width="49%" src="assets/cards/stats-light.svg#gh-light-mode-only" alt="GitHub stats" />
-<img width="49%" src="assets/cards/stats.svg#gh-dark-mode-only" alt="GitHub stats" />
-<img width="49%" src="assets/cards/top-langs-light.svg#gh-light-mode-only" alt="Top languages" />
-<img width="49%" src="assets/cards/top-langs.svg#gh-dark-mode-only" alt="Top languages" />
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/stats.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cards/stats-light.svg"><img width="49%" src="assets/cards/stats-light.svg" alt="GitHub stats" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/top-langs.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cards/top-langs-light.svg"><img width="49%" src="assets/cards/top-langs-light.svg" alt="Top languages" /></picture>
 
 <br/>
 
-<img height="180" src="assets/cards/streak-light.svg#gh-light-mode-only" alt="Contribution streak" />
-<img height="180" src="assets/cards/streak.svg#gh-dark-mode-only" alt="Contribution streak" />
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/streak.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cards/streak-light.svg"><img height="180" src="assets/cards/streak-light.svg" alt="Contribution streak" /></picture>
 
 <br/><br/>
 
-<img src="assets/cards/trophy-light.svg#gh-light-mode-only" alt="GitHub trophies" />
-<img src="assets/cards/trophy.svg#gh-dark-mode-only" alt="GitHub trophies" />
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/trophy.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cards/trophy-light.svg"><img src="assets/cards/trophy-light.svg" alt="GitHub trophies" /></picture>
 
 <br/><br/>
 
-<img src="assets/cards/activity-light.svg#gh-light-mode-only" alt="Contribution activity" width="100%" />
-<img src="assets/cards/activity.svg#gh-dark-mode-only" alt="Contribution activity" width="100%" />
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/activity.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cards/activity-light.svg"><img src="assets/cards/activity-light.svg" alt="Contribution activity" width="100%" /></picture>
 
 </div>
 
@@ -177,21 +172,20 @@ I have shipped real product and operations work at **TikTok Shop** and **Poizon*
 
 <div align="center">
 
-<img alt="Contribution snake" src="assets/cards/snake-light.svg#gh-light-mode-only" width="100%" />
-<img alt="Contribution snake" src="assets/cards/snake.svg#gh-dark-mode-only" width="100%" />
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/snake.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cards/snake-light.svg"><img alt="Contribution snake" src="assets/cards/snake-light.svg" width="100%" /></picture>
 
 </div>
 
-<img src="assets/wave.svg" width="100%" alt="section divider" />
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/wave-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/wave-light.svg"><img src="assets/wave-light.svg" width="100%" alt="section divider" /></picture>
 
 ## 🌱 Now
 
-<img src="assets/now-console-v2.svg" width="100%" alt="Current mission, active builds and learning orbit" />
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/now-console-v2-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/now-console-v2-light.svg"><img src="assets/now-console-v2-light.svg" width="100%" alt="Current mission, active builds and learning orbit" /></picture>
 
 ## ✦ ChatGPT Token Telemetry
 
 <a href="https://chatgpt.com/u/vinceshu01">
-  <img src="assets/chatgpt-activity.svg?v=202610031942" width="100%" alt="ChatGPT daily token consumption, lifetime total, peak and streaks" />
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/chatgpt-activity-dark.svg?v=202610032009"><source media="(prefers-color-scheme: light)" srcset="assets/chatgpt-activity-light.svg?v=202610032009"><img src="assets/chatgpt-activity-light.svg?v=202610032009" width="100%" alt="ChatGPT daily token consumption, lifetime total, peak and streaks" /></picture>
 </a>
 
 <sub>Tracks actual Work / Codex token consumption by day — not remaining quota. Automatically refreshed from my ChatGPT profile analytics.</sub>

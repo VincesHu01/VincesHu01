@@ -113,8 +113,8 @@ def main() -> None:
         content = readme.read_text(encoding="utf-8")
         version = now.strftime("%Y%m%d%H%M")
         refreshed = re.sub(
-            r"assets/chatgpt-activity\.svg(?:\?v=[^\"]+)?",
-            f"assets/chatgpt-activity.svg?v={version}",
+            r"(assets/chatgpt-activity-(?:dark|light)\.svg)(?:\?v=[^\"]+)?",
+            rf"\1?v={version}",
             content,
         )
         if refreshed != content:

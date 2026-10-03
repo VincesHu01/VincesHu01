@@ -1,0 +1,26 @@
+<svg width="440" height="238" viewBox="0 0 440 238" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="WPS PPT Recolor project card">
+  <style>
+    
+      .bg{fill:#ffffff}.panel{fill:#f8fafc;stroke:#c4b5fd}.title{fill:#3b0764}.text{fill:#475569}.muted{fill:#64748b}.grid{stroke:#7c3aed}
+    
+    .dash{animation:flow 5s linear infinite}.pulse{animation:pulse 2.4s ease-in-out infinite}@keyframes flow{to{stroke-dashoffset:-80}}@keyframes pulse{50%{opacity:.42;transform:scale(.96)}}
+  </style>
+  <defs>
+    <linearGradient id="edge" x1="0" x2="1"><stop stop-color="#8b5cf6"/><stop offset=".5" stop-color="#ec4899"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+    <filter id="g"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect class="bg" width="440" height="238" rx="18" fill="#080b14"/>
+  <rect class="panel" x="1.5" y="1.5" width="437" height="235" rx="17" fill="#0d1117" stroke="url(#edge)" stroke-width="3"/>
+  <path class="grid" d="M20 56H420M20 96H420M20 136H420M20 176H420" stroke="#8b5cf6" opacity=".08"/>
+  <circle cx="28" cy="25" r="5" fill="#ef4444"/><circle cx="44" cy="25" r="5" fill="#fbbf24"/><circle cx="60" cy="25" r="5" fill="#22c55e"/>
+  <text x="410" y="30" text-anchor="end" font-family="monospace" font-size="11" fill="#22d3ee">CLI · OOXML · WPS</text>
+  <text class="title" x="24" y="76" font-family="-apple-system,'Segoe UI',sans-serif" font-size="25" font-weight="800" fill="#f5f3ff">PPT Recolor Engine</text>
+  <text class="text" x="24" y="102" font-family="-apple-system,'Segoe UI',sans-serif" font-size="14" fill="#cbd5e1">One command. Your template adopts the deck palette.</text>
+  <g transform="translate(24 124)">
+    <rect width="118" height="72" rx="12" fill="#fb923c" opacity=".95"/><rect x="12" y="13" width="94" height="13" rx="6" fill="#7c2d12" opacity=".65"/><circle cx="34" cy="50" r="13" fill="#22c55e"/><circle cx="76" cy="50" r="13" fill="#a855f7"/>
+    <path class="dash" d="M133 36H192" stroke="url(#edge)" stroke-width="3" stroke-dasharray="7 7"/>
+    <path d="m186 29 10 7-10 7" fill="none" stroke="#ec4899" stroke-width="3"/>
+    <rect x="210" width="118" height="72" rx="12" fill="#193757"/><rect x="222" y="13" width="94" height="13" rx="6" fill="#0b1f33"/><circle class="pulse" cx="244" cy="50" r="13" fill="#2e8b8b" transform-origin="244px 50px"/><circle cx="286" cy="50" r="13" fill="#8064a2"/>
+  </g>
+  <text class="muted" x="24" y="222" font-family="monospace" font-size="11" fill="#94a3b8">zero runtime deps · gradients preserved · safe backup</text>
+</svg>

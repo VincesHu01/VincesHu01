@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="410" viewBox="0 0 1000 410" role="img" aria-labelledby="title desc">
+  <title id="title">VincesHu current operating system</title>
+  <desc id="desc">A live mission console showing current AI product builds, learning orbit, and operating principles.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070a18"/><stop offset=".48" stop-color="#10102b"/><stop offset="1" stop-color="#071a24"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#8b5cf6"/><stop offset=".5" stop-color="#ec4899"/><stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#ffffff" stop-opacity=".10"/><stop offset="1" stop-color="#ffffff" stop-opacity=".035"/>
+    </linearGradient>
+    <radialGradient id="orb" cx="50%" cy="50%" r="50%">
+      <stop stop-color="#a78bfa" stop-opacity=".7"/><stop offset=".45" stop-color="#22d3ee" stop-opacity=".16"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#94a3b8" stroke-opacity=".055"/></pattern>
+    <style>
+      text{font-family:Inter,'Segoe UI',Arial,sans-serif}.mono{font-family:'SFMono-Regular',Consolas,monospace}.bg{fill:url(#bg)}.grid-bg{fill:url(#grid)}.glass{fill:url(#glass)}.core{fill:#0f172a}.muted{fill:#94a3b8}.bright{fill:#f8fafc}.label{font-size:11px;letter-spacing:2.1px;font-weight:700}.title{font-size:25px;font-weight:800}.body{font-size:14px}.small{font-size:12px}.chip{font-size:11px;font-weight:700}.pulse{animation:pulse 2.4s ease-in-out infinite}.orbit{transform-origin:835px 206px;animation:spin 12s linear infinite}.scan{animation:scan 5.5s linear infinite}@keyframes pulse{50%{opacity:.35}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes scan{0%{transform:translateY(-45px);opacity:0}12%{opacity:.5}88%{opacity:.18}100%{transform:translateY(455px);opacity:0}}
+      
+    </style>
+  </defs>
+  <rect class="bg" width="1000" height="410" rx="22"/>
+  <rect class="grid-bg" width="1000" height="410" rx="22"/>
+  <rect x=".75" y=".75" width="998.5" height="408.5" rx="21.25" fill="none" stroke="url(#edge)" stroke-opacity=".75" stroke-width="1.5"/>
+  <rect class="glass" x="24" y="20" width="952" height="46" rx="13" stroke="#94a3b8" stroke-opacity=".18"/>
+  <circle cx="47" cy="43" r="5" fill="#34d399" filter="url(#glow)" class="pulse"/>
+  <text x="62" y="47" class="label bright">CURRENT OPERATING SYSTEM</text>
+  <text x="296" y="47" class="label muted">// LIVE BUILD MODE</text>
+  <text x="883" y="47" text-anchor="end" class="label" fill="#22d3ee">VINCESHU.OS</text>
+  <text x="952" y="47" text-anchor="end" class="mono small muted">v26.10</text>
+
+  <text x="34" y="100" class="label" fill="#a78bfa">MISSION VECTOR</text>
+  <text x="34" y="133" class="title bright">Turn messy workflows into</text>
+  <text x="34" y="163" class="title" fill="#f0abfc">useful AI products.</text>
+  <path d="M34 180H585" stroke="url(#edge)" stroke-width="2" stroke-linecap="round" opacity=".8"/>
+
+  <g transform="translate(34 204)">
+    <rect class="glass" width="552" height="54" rx="13" stroke="#8b5cf6" stroke-opacity=".42"/>
+    <rect x="12" y="12" width="30" height="30" rx="9" fill="#8b5cf6" fill-opacity=".18"/><text x="27" y="33" text-anchor="middle" font-size="16">🎨</text>
+    <text x="55" y="22" class="label" fill="#c4b5fd">01 · PALETTE INTELLIGENCE</text><text x="55" y="42" class="body bright">WPS / PowerPoint · preserve visual hierarchy</text>
+    <text x="528" y="32" text-anchor="end" class="mono small" fill="#34d399">BUILDING</text>
+  </g>
+  <g transform="translate(34 270)">
+    <rect class="glass" width="552" height="54" rx="13" stroke="#ec4899" stroke-opacity=".38"/>
+    <rect x="12" y="12" width="30" height="30" rx="9" fill="#ec4899" fill-opacity=".16"/><text x="27" y="33" text-anchor="middle" font-size="16">🧠</text>
+    <text x="55" y="22" class="label" fill="#f9a8d4">02 · DETERMINISTIC CODEX SKILLS</text><text x="55" y="42" class="body bright">Reusable systems · quality checks baked in</text>
+    <text x="528" y="32" text-anchor="end" class="mono small" fill="#f472b6">SHIPPING</text>
+  </g>
+  <g transform="translate(34 336)">
+    <rect class="glass" width="552" height="54" rx="13" stroke="#22d3ee" stroke-opacity=".36"/>
+    <rect x="12" y="12" width="30" height="30" rx="9" fill="#22d3ee" fill-opacity=".14"/><text x="27" y="33" text-anchor="middle" font-size="16">🔎</text>
+    <text x="55" y="22" class="label" fill="#67e8f9">03 · PERSONAL INTELLIGENCE</text><text x="55" y="42" class="body bright">Local-first search · memory that stays useful</text>
+    <text x="528" y="32" text-anchor="end" class="mono small" fill="#22d3ee">EXPLORING</text>
+  </g>
+
+  <g>
+    <circle cx="835" cy="206" r="128" fill="url(#orb)" opacity=".55"/>
+    <circle cx="835" cy="206" r="96" fill="none" stroke="#8b5cf6" stroke-opacity=".34" stroke-dasharray="2 8" class="orbit"/>
+    <circle cx="835" cy="206" r="67" fill="none" stroke="#22d3ee" stroke-opacity=".25"/>
+    <circle class="core" cx="835" cy="206" r="42" stroke="url(#edge)" stroke-width="2" filter="url(#glow)"/>
+    <text x="835" y="201" text-anchor="middle" class="label" fill="#e9d5ff">LEARN</text><text x="835" y="220" text-anchor="middle" class="mono small bright">SHIP ↗</text>
+    <circle cx="835" cy="110" r="5" fill="#a78bfa" filter="url(#glow)"/>
+    <circle cx="899" cy="256" r="5" fill="#22d3ee" filter="url(#glow)"/>
+    <circle cx="774" cy="233" r="4" fill="#f472b6" filter="url(#glow)"/>
+  </g>
+  <text x="835" y="91" text-anchor="middle" class="label muted">LEARNING ORBIT</text>
+  <g transform="translate(638 321)"><rect width="120" height="28" rx="14" fill="#8b5cf6" fill-opacity=".16" stroke="#8b5cf6" stroke-opacity=".42"/><text x="60" y="18" text-anchor="middle" class="chip" fill="#ddd6fe">PRODUCT STRATEGY</text></g>
+  <g transform="translate(766 321)"><rect width="126" height="28" rx="14" fill="#ec4899" fill-opacity=".13" stroke="#ec4899" stroke-opacity=".4"/><text x="63" y="18" text-anchor="middle" class="chip" fill="#fbcfe8">AGENTIC DESIGN</text></g>
+  <g transform="translate(900 321)"><rect width="76" height="28" rx="14" fill="#22d3ee" fill-opacity=".13" stroke="#22d3ee" stroke-opacity=".4"/><text x="38" y="18" text-anchor="middle" class="chip" fill="#cffafe">GLOBAL</text></g>
+  <text x="638" y="381" class="mono small muted">INPUT</text><text x="685" y="381" class="mono small bright">curiosity</text><text x="785" y="381" class="mono small muted">OUTPUT</text><text x="838" y="381" class="mono small bright">shipped systems</text><text x="955" y="294" text-anchor="end" class="mono small" fill="#fbbf24">☕ × 3 / DAY</text>
+  <rect x="0" y="0" width="1000" height="2" fill="url(#edge)" class="scan" opacity=".3"/>
+</svg>
