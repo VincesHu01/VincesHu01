@@ -7,6 +7,7 @@ import argparse
 import html
 import json
 import os
+import re
 import urllib.request
 from pathlib import Path
 
@@ -21,9 +22,9 @@ def esc(value: object) -> str:
     return html.escape(str(value or ""), quote=True)
 
 
-def fetch(owner: str, repo: str) -> dict:
+def request_json(url: str) -> object:
     request = urllib.request.Request(
-        f"https://api.github.com/repos/{owner}/{repo}",
+        url,
         headers={
             "Accept": "application/vnd.github+json",
             "User-Agent": "VincesHu01-profile-card-builder",
@@ -32,6 +33,15 @@ def fetch(owner: str, repo: str) -> dict:
     )
     with urllib.request.urlopen(request, timeout=30) as response:
         return json.load(response)
+
+
+def fetch(owner: str, repo: str) -> dict:
+    return dict(request_json(f"https://api.github.com/repos/{owner}/{repo}"))
+
+
+def fetch_all(owner: str) -> list[dict]:
+    result = request_json(f"https://api.github.com/users/{owner}/repos?type=owner&sort=pushed&direction=desc&per_page=100")
+    return [dict(item) for item in result if isinstance(item, dict)]
 
 
 def wrap(text: str, width: int = 54, lines: int = 2) -> list[str]:
@@ -93,19 +103,83 @@ def render(data: dict, accent: str) -> str:
 </svg>'''
 
 
+def repo_snapshot(data: dict) -> dict:
+    return {
+        key: data.get(key)
+        for key in (
+            "name", "html_url", "description", "language", "stargazers_count",
+            "forks_count", "pushed_at", "updated_at", "homepage", "topics",
+        )
+    }
+
+
+def latest_markup(repos: list[dict]) -> str:
+    cells: list[str] = []
+    for index, repo in enumerate(repos[:2], 1):
+        name = esc(repo["name"])
+        url = esc(repo["html_url"])
+        description = esc(repo.get("description") or "No description yet.")
+        cells.append(f'''    <td width="50%" valign="top">
+      <a href="{url}"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/repo-latest-{index}-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cards/repo-latest-{index}-light.svg"><img src="assets/cards/repo-latest-{index}-light.svg" width="100%" alt="{name}" /></picture></a>
+      <br/>
+      <b>{name}</b><br/>
+      {description}
+      <br/><br/>
+      <a href="{url}"><code>VIEW SOURCE →</code></a>
+    </td>''')
+    return '<table>\n  <tr>\n' + "\n".join(cells) + '\n  </tr>\n</table>'
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--owner", default="VincesHu01")
     parser.add_argument("--output", type=Path, default=Path("assets/cards"))
+    parser.add_argument("--data", type=Path, default=Path("data/github-projects.json"))
+    parser.add_argument("--readme", type=Path, default=Path("README.md"))
     parser.add_argument("repos", nargs="*", default=["timeless-career-intelligence", "ai-news-aggregator", "Apex-workbench", "douji"])
     args = parser.parse_args()
     accents = ["#8b5cf6", "#ec4899", "#22d3ee", "#f59e0b"]
     args.output.mkdir(parents=True, exist_ok=True)
+    all_repos = fetch_all(args.owner)
+    by_name = {item["name"].lower(): item for item in all_repos}
     for repo, accent in zip(args.repos, accents):
-        data = fetch(args.owner, repo)
+        data = by_name.get(repo.lower()) or fetch(args.owner, repo)
         target = args.output / f"repo-{repo}.svg"
         target.write_text(render(data, accent), encoding="utf-8")
         print(f"OK   {target} <- {data.get('description')}")
+
+    latest = [
+        repo for repo in all_repos
+        if not repo.get("fork") and not repo.get("archived") and repo.get("name", "").lower() != args.owner.lower()
+    ][:3]
+    for index, repo in enumerate(latest[:2], 1):
+        target = args.output / f"repo-latest-{index}.svg"
+        target.write_text(render(repo, accents[index - 1]), encoding="utf-8")
+        print(f"OK   {target} <- {repo.get('name')}")
+
+    args.data.parent.mkdir(parents=True, exist_ok=True)
+    snapshot = {
+        "owner": args.owner,
+        "updated_at": max(
+            (repo.get("updated_at") or "" for repo in all_repos),
+            default="",
+        ),
+        "latest": [repo_snapshot(repo) for repo in latest],
+        "shipped": [repo_snapshot(by_name.get(name.lower()) or fetch(args.owner, name)) for name in args.repos],
+    }
+    args.data.write_text(json.dumps(snapshot, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    if args.readme.exists() and len(latest) >= 2:
+        content = args.readme.read_text(encoding="utf-8")
+        replacement = f"<!-- LATEST_BUILDS:START -->\n{latest_markup(latest)}\n<!-- LATEST_BUILDS:END -->"
+        updated = re.sub(
+            r"<!-- LATEST_BUILDS:START -->.*?<!-- LATEST_BUILDS:END -->",
+            replacement,
+            content,
+            flags=re.DOTALL,
+        )
+        if updated != content:
+            args.readme.write_text(updated, encoding="utf-8")
 
 
 if __name__ == "__main__":

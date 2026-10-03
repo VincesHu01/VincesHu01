@@ -11,6 +11,7 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import json
+import math
 import re
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -31,10 +32,20 @@ def session_files(codex_dir: Path) -> list[Path]:
     return list(candidates.values())
 
 
-def daily_totals(codex_dir: Path) -> dict[str, int]:
+def activity_metrics(codex_dir: Path) -> tuple[dict[str, int], int]:
+    """Return daily token totals and the longest observed active session.
+
+    Task duration is derived only from token-count event timestamps. Gaps are
+    capped at 30 minutes so leaving a session open cannot create a fake
+    multi-hour task. No prompt or response content is inspected.
+    """
     totals: dict[str, int] = {}
+    longest_task_minutes = 0
     for path in session_files(codex_dir):
         previous = 0
+        previous_timestamp: dt.datetime | None = None
+        active_seconds = 0.0
+        valid_events = 0
         try:
             lines = path.open(encoding="utf-8")
         except OSError:
@@ -50,13 +61,30 @@ def daily_totals(codex_dir: Path) -> dict[str, int]:
                     timestamp = dt.datetime.fromisoformat(record["timestamp"].replace("Z", "+00:00"))
                 except (KeyError, TypeError, ValueError, json.JSONDecodeError):
                     continue
+                valid_events += 1
+                if previous_timestamp is not None:
+                    gap = (timestamp - previous_timestamp).total_seconds()
+                    if 0 < gap <= 30 * 60:
+                        active_seconds += gap
+                    elif gap > 30 * 60:
+                        longest_task_minutes = max(
+                            longest_task_minutes,
+                            max(1, math.ceil(active_seconds / 60)),
+                        )
+                        active_seconds = 0.0
+                previous_timestamp = timestamp
                 delta = current - previous if current >= previous else current
                 previous = current
                 if delta <= 0:
                     continue
                 day = timestamp.astimezone(LOCAL_TZ).date().isoformat()
                 totals[day] = totals.get(day, 0) + delta
-    return totals
+        if valid_events:
+            longest_task_minutes = max(
+                longest_task_minutes,
+                max(1, math.ceil(active_seconds / 60)),
+            )
+    return totals, longest_task_minutes
 
 
 def streaks(totals: dict[str, int], today: dt.date) -> tuple[int, int]:
@@ -83,7 +111,7 @@ def main() -> None:
     args = parser.parse_args()
 
     data = json.loads(args.data.read_text(encoding="utf-8"))
-    totals = daily_totals(args.codex_dir)
+    totals, observed_longest_task = activity_metrics(args.codex_dir)
     collected_total = sum(totals.values())
 
     baseline = data.setdefault("sync_baseline", {})
@@ -95,6 +123,9 @@ def main() -> None:
     )
     data["daily"] = [{"date": day, "tokens": totals[day]} for day in sorted(totals)]
     data["peak_tokens"] = max(int(data.get("peak_tokens", 0)), max(totals.values(), default=0))
+    data["longest_task_minutes"] = max(
+        int(data.get("longest_task_minutes", 0)), observed_longest_task
+    )
 
     now = dt.datetime.now(LOCAL_TZ)
     longest, current = streaks(totals, now.date())

@@ -1,0 +1,101 @@
+{
+  "owner": "VincesHu01",
+  "updated_at": "2026-10-03T12:13:10Z",
+  "latest": [
+    {
+      "name": "wps-ppt-recolor",
+      "html_url": "https://github.com/VincesHu01/wps-ppt-recolor",
+      "description": "Paste a template diagram into a slide, run one command, and its colors become your deck's colors.",
+      "language": "Python",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "pushed_at": "2026-10-02T18:52:05Z",
+      "updated_at": "2026-10-02T18:58:07Z",
+      "homepage": null,
+      "topics": [
+        "macro",
+        "ooxml",
+        "palette",
+        "powerpoint",
+        "pptx",
+        "recolor",
+        "slides",
+        "wps"
+      ]
+    },
+    {
+      "name": "academic-deliverables",
+      "html_url": "https://github.com/VincesHu01/academic-deliverables",
+      "description": "Skill of Academic Standardized PPT & Word Production for Economics & Management",
+      "language": "Python",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "pushed_at": "2026-10-02T18:30:01Z",
+      "updated_at": "2026-10-03T09:54:48Z",
+      "homepage": "",
+      "topics": []
+    },
+    {
+      "name": "Apex-workbench",
+      "html_url": "https://github.com/VincesHu01/Apex-workbench",
+      "description": "APEX — a Neo-Brutalism Personal Life-tracking Workbench. Single-file, Zero-framework, LocalStorage-only",
+      "language": "HTML",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "pushed_at": "2026-10-01T19:00:57Z",
+      "updated_at": "2026-10-03T09:56:25Z",
+      "homepage": "",
+      "topics": []
+    }
+  ],
+  "shipped": [
+    {
+      "name": "timeless-career-intelligence",
+      "html_url": "https://github.com/VincesHu01/timeless-career-intelligence",
+      "description": "Timeless — Intelligence, Competency Perspective and AI Learning System for Internet Product and Operations Roles in China",
+      "language": "TypeScript",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "pushed_at": "2026-10-01T18:58:53Z",
+      "updated_at": "2026-10-03T09:52:20Z",
+      "homepage": "https://timeless-career-intelligence.vercel.app",
+      "topics": []
+    },
+    {
+      "name": "ai-news-aggregator",
+      "html_url": "https://github.com/VincesHu01/ai-news-aggregator",
+      "description": "Real AI News Aggregation with LLM Summarization😍",
+      "language": "TypeScript",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "pushed_at": "2026-10-01T18:51:50Z",
+      "updated_at": "2026-10-03T09:55:27Z",
+      "homepage": "https://ai-news-frontend-kappa.vercel.app",
+      "topics": []
+    },
+    {
+      "name": "Apex-workbench",
+      "html_url": "https://github.com/VincesHu01/Apex-workbench",
+      "description": "APEX — a Neo-Brutalism Personal Life-tracking Workbench. Single-file, Zero-framework, LocalStorage-only",
+      "language": "HTML",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "pushed_at": "2026-10-01T19:00:57Z",
+      "updated_at": "2026-10-03T09:56:25Z",
+      "homepage": "",
+      "topics": []
+    },
+    {
+      "name": "douji",
+      "html_url": "https://github.com/VincesHu01/douji",
+      "description": "A Lightweight, Local-first MacOS APP for Searching Doubao History and Jumping to the Exact Matching Turn.",
+      "language": "Swift",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "pushed_at": "2026-10-01T18:00:05Z",
+      "updated_at": "2026-10-03T09:57:37Z",
+      "homepage": "",
+      "topics": []
+    }
+  ]
+}

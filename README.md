@@ -50,26 +50,28 @@ I have shipped real product and operations work at **TikTok Shop** and **Poizon*
 
 ## ⚡ Latest Builds
 
+<!-- LATEST_BUILDS:START -->
 <table>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/VincesHu01/wps-ppt-recolor"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/build-wps-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/build-wps-light.svg"><img src="assets/build-wps-light.svg" width="100%" alt="PPT Recolor Engine" /></picture></a>
+      <a href="https://github.com/VincesHu01/wps-ppt-recolor"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/repo-latest-1-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cards/repo-latest-1-light.svg"><img src="assets/cards/repo-latest-1-light.svg" width="100%" alt="wps-ppt-recolor" /></picture></a>
       <br/>
-      <b>PPT Recolor Engine</b><br/>
-      Reads the palette a deck actually uses, then remaps pasted diagrams, gradients and charts without flattening their visual hierarchy.
+      <b>wps-ppt-recolor</b><br/>
+      Paste a template diagram into a slide, run one command, and its colors become your deck&#x27;s colors.
       <br/><br/>
       <a href="https://github.com/VincesHu01/wps-ppt-recolor"><code>VIEW SOURCE →</code></a>
     </td>
     <td width="50%" valign="top">
-      <a href="https://github.com/VincesHu01/academic-deliverables"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/build-academic-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/build-academic-light.svg"><img src="assets/build-academic-light.svg" width="100%" alt="Academic Deliverables Codex Skill" /></picture></a>
+      <a href="https://github.com/VincesHu01/academic-deliverables"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/repo-latest-2-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cards/repo-latest-2-light.svg"><img src="assets/cards/repo-latest-2-light.svg" width="100%" alt="academic-deliverables" /></picture></a>
       <br/>
-      <b>Academic Deliverables Skill</b><br/>
-      Turns 43 threads of real revision feedback into reusable production rules and deterministic PPTX/DOCX quality checks.
+      <b>academic-deliverables</b><br/>
+      Skill of Academic Standardized PPT &amp; Word Production for Economics &amp; Management
       <br/><br/>
       <a href="https://github.com/VincesHu01/academic-deliverables"><code>VIEW SOURCE →</code></a>
     </td>
   </tr>
 </table>
+<!-- LATEST_BUILDS:END -->
 
 <a id="shipped-systems"></a>
 
@@ -185,7 +187,7 @@ I have shipped real product and operations work at **TikTok Shop** and **Poizon*
 ## ✦ ChatGPT Token Telemetry
 
 <a href="https://chatgpt.com/u/vinceshu01">
-  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/chatgpt-activity-dark.svg?v=202610032012"><source media="(prefers-color-scheme: light)" srcset="assets/chatgpt-activity-light.svg?v=202610032012"><img src="assets/chatgpt-activity-light.svg?v=202610032012" width="100%" alt="ChatGPT daily token consumption, lifetime total, peak and streaks" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/chatgpt-activity-dark.svg?v=202610032025"><source media="(prefers-color-scheme: light)" srcset="assets/chatgpt-activity-light.svg?v=202610032025"><img src="assets/chatgpt-activity-light.svg?v=202610032025" width="100%" alt="ChatGPT daily token consumption, lifetime total, peak and streaks" /></picture>
 </a>
 
 <sub>Tracks actual Work / Codex token consumption by day — not remaining quota. Automatically refreshed from my ChatGPT profile analytics.</sub>
