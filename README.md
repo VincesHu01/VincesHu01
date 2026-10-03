@@ -191,7 +191,7 @@ I have shipped real product and operations work at **TikTok Shop** and **Poizon*
 ## ✦ ChatGPT Token Telemetry
 
 <a href="https://chatgpt.com/u/vinceshu01">
-  <img src="assets/chatgpt-activity.svg?v=202610031840" width="100%" alt="ChatGPT daily token consumption, lifetime total, peak and streaks" />
+  <img src="assets/chatgpt-activity.svg?v=202610031912" width="100%" alt="ChatGPT daily token consumption, lifetime total, peak and streaks" />
 </a>
 
 <sub>Tracks actual Work / Codex token consumption by day — not remaining quota. Automatically refreshed from my ChatGPT profile analytics.</sub>
