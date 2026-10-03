@@ -96,6 +96,16 @@ jobs:
             "https://streak-stats.demolab.com/?user=VincesHu01&theme=default&background=ffffff&ring=7c3aed&fire=db2777&currStreakLabel=7c3aed&sideLabels=57606a&dates=57606a&border_radius=12"
           fallback assets/cards/streak-light.svg assets/cards/streak.svg
 
+          # 蛇图由 snake.yml 生成在 output 分支上，这里拷一份进 main。
+          # 目的是让 README 能用「仓库相对路径」引用它：相对路径不走 camo 代理，
+          # 图片外层的 <a href> 才会保留 #gh-light-mode-only 字面量，
+          # GitHub 的 CSS（[href$="#gh-light-mode-only"]）才命中得上。
+          fetch assets/cards/snake.svg \
+            "https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@output/github-contribution-grid-snake-dark.svg"
+          fetch assets/cards/snake-light.svg \
+            "https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@output/github-contribution-grid-snake.svg"
+          fallback assets/cards/snake-light.svg assets/cards/snake.svg
+
           # 原 github-profile-trophy.vercel.app 已被作者暂停，改用社区镜像
           fetch assets/cards/trophy.svg \
             "https://github-profile-trophy.screw-hand.vercel.app/?username=VincesHu01&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&row=1" \
