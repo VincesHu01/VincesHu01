@@ -11,6 +11,7 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import json
+import re
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -103,6 +104,21 @@ def main() -> None:
     data["source"] = "local Codex token_count events"
 
     args.data.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    # GitHub's image proxy can otherwise keep serving an older SVG after the
+    # data file changes. A content-derived README version stamp gives each
+    # telemetry refresh a fresh image URL without changing the asset path.
+    readme = args.data.parent.parent / "README.md"
+    if readme.exists():
+        content = readme.read_text(encoding="utf-8")
+        version = now.strftime("%Y%m%d%H%M")
+        refreshed = re.sub(
+            r"assets/chatgpt-activity\.svg(?:\?v=[^\"]+)?",
+            f"assets/chatgpt-activity.svg?v={version}",
+            content,
+        )
+        if refreshed != content:
+            readme.write_text(refreshed, encoding="utf-8")
 
 
 if __name__ == "__main__":
