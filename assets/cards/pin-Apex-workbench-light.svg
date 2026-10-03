@@ -100,7 +100,7 @@
     
 
     <text class="description" x="25" y="-5">
-      <tspan dy="1.2em" x="25">APEX &#8212; a Neo-Brutalism personal life-tracking</tspan><tspan dy="1.2em" x="25">workbench. Single-file, zero-framework, localStorage-only</tspan>
+      <tspan dy="1.2em" x="25">APEX &#8212; a Neo-Brutalism Personal Life-tracking</tspan><tspan dy="1.2em" x="25">Workbench. Single-file, Zero-framework, LocalStorage-only</tspan>
     </text>
 
     <g transform="translate(30, 65)">
