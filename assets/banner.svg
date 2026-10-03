@@ -1,4 +1,4 @@
-<svg width="1200" height="220" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="260" xmlns="http://www.w3.org/2000/svg">
   <style>
     @media (prefers-color-scheme: light) {
       .bg-1 { stop-color: #f5f3ff; }
@@ -9,6 +9,9 @@
       .ripple { fill: #ffffff; }
       .title { fill: #3b0764; }
       .tagline { fill: #6d28d9; }
+      .grid { stroke: #7c3aed; }
+      .chip { fill: #ffffff; stroke: #a78bfa; }
+      .chip-text { fill: #5b21b6; }
     }
   </style>
   <defs>
@@ -21,10 +24,28 @@
       <stop class="wave-1" offset="0%" stop-color="#0f0f1e" stop-opacity="0"/>
       <stop class="wave-2" offset="100%" stop-color="#0f0f1e" stop-opacity="0.3"/>
     </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
-  <rect width="1200" height="220" fill="url(#bg)"/>
-  <path class="ripple" d="M0,180 Q300,150 600,180 T1200,170 L1200,220 L0,220 Z" fill="#0f0f1e" opacity="0.4"/>
-  <path class="ripple" d="M0,195 Q300,170 600,195 T1200,190 L1200,220 L0,220 Z" fill="#0f0f1e" opacity="0.6"/>
-  <text class="title" x="600" y="110" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="64" font-weight="800" fill="#ffffff" text-anchor="middle">VincesHu</text>
-  <text class="tagline" x="600" y="155" font-family="'SF Mono', 'Fira Code', monospace" font-size="18" fill="#c4b5fd" text-anchor="middle">EVERYTHING YOU NEED IS IN AI</text>
+  <rect width="1200" height="260" fill="url(#bg)"/>
+  <g class="grid" opacity="0.16" stroke="#ffffff" stroke-width="1">
+    <path d="M0 45H1200M0 90H1200M0 135H1200M0 180H1200M150 0V230M300 0V230M450 0V230M600 0V230M750 0V230M900 0V230M1050 0V230"/>
+  </g>
+  <rect x="0" y="0" width="130" height="260" fill="#ffffff" opacity="0.09">
+    <animate attributeName="x" values="-180;1250" dur="5s" repeatCount="indefinite"/>
+  </rect>
+  <text class="title" x="600" y="92" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="62" font-weight="850" fill="#ffffff" text-anchor="middle" filter="url(#glow)">VincesHu</text>
+  <text class="tagline" x="600" y="132" font-family="'SF Mono', 'Fira Code', monospace" font-size="17" fill="#e9d5ff" text-anchor="middle">BUILDING AI PRODUCTS FROM MESSY REAL-WORLD WORKFLOWS</text>
+  <g font-family="'SF Mono','Fira Code',monospace" font-size="13" text-anchor="middle">
+    <rect class="chip" x="315" y="158" width="170" height="34" rx="17" fill="#111827" stroke="#c4b5fd" opacity="0.95"/>
+    <text class="chip-text" x="400" y="180" fill="#f5f3ff">AI PRODUCT</text>
+    <rect class="chip" x="515" y="158" width="170" height="34" rx="17" fill="#111827" stroke="#f9a8d4" opacity="0.95"/>
+    <text class="chip-text" x="600" y="180" fill="#fdf2f8">GROWTH × OPS</text>
+    <rect class="chip" x="715" y="158" width="170" height="34" rx="17" fill="#111827" stroke="#67e8f9" opacity="0.95"/>
+    <text class="chip-text" x="800" y="180" fill="#ecfeff">BUILD IN PUBLIC</text>
+  </g>
+  <path class="ripple" d="M0,215 Q300,188 600,218 T1200,207 L1200,260 L0,260 Z" fill="#0f0f1e" opacity="0.38"/>
+  <path class="ripple" d="M0,232 Q300,208 600,235 T1200,226 L1200,260 L0,260 Z" fill="#0f0f1e" opacity="0.58"/>
 </svg>
