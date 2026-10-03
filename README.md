@@ -10,7 +10,7 @@
 
 <br/>
 
-<a href="https://github.com/VincesHu01"><img src="assets/typing-card.svg" width="720" alt="VincesHu terminal profile" /></a>
+<a href="https://github.com/VincesHu01"><img src="assets/typing-card.svg?v=20261003b" width="760" alt="VincesHu identity command center" /></a>
 
 <br/><br/>
 
@@ -186,12 +186,12 @@ I have shipped real product and operations work at **TikTok Shop** and **Poizon*
 
 ## 🌱 Now
 
-<img src="assets/now-console.svg" width="100%" alt="Current mission, active builds and learning orbit" />
+<img src="assets/now-console.svg?v=20261003b" width="100%" alt="Current mission, active builds and learning orbit" />
 
 ## ✦ ChatGPT Token Telemetry
 
 <a href="https://chatgpt.com/u/vinceshu01">
-  <img src="assets/chatgpt-activity.svg" width="100%" alt="ChatGPT daily token consumption, lifetime total, peak and streaks" />
+  <img src="assets/chatgpt-activity.svg?v=20261003b" width="100%" alt="ChatGPT daily token consumption, lifetime total, peak and streaks" />
 </a>
 
 <sub>Tracks actual Work / Codex token consumption by day — not remaining quota. Automatically refreshed from my ChatGPT profile analytics.</sub>
