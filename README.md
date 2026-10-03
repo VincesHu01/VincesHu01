@@ -83,39 +83,29 @@ I'm **VincesHu (Hu Zhongyue)**, a Master's candidate at **Sun Yat-sen University
 <!-- 卡片由 .github/workflows/readme-cards.yml 每天自动重新生成并提交，
      README 只引用仓库内的静态 SVG，避免公共 vercel/heroku 实例被暂停时出现裂图。
 
-     每张卡片有两套：xxx.svg（深色）/ xxx-light.svg（浅色），
-     下面用 <picture> + prefers-color-scheme 跟随 GitHub 当前主题切换。
-     默认 <img> 放深色版，浅色版抓不到时不会裂图。 -->
+     每张卡片有两套：xxx-light.svg（浅色）/ xxx.svg（深色），
+     用 GitHub 官方的 #gh-light-mode-only / #gh-dark-mode-only 后缀按主题显示。
+     注意：GitHub 的 HTML 过滤器会剥掉 <picture>/<source>，只能用这种写法。 -->
 
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/stats-light.svg" />
-  <img height="180" src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/stats.svg" alt="GitHub stats" />
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/top-langs-light.svg" />
-  <img height="180" src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/top-langs.svg" alt="Top languages" />
-</picture>
+<img height="180" src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/stats-light.svg#gh-light-mode-only" alt="GitHub stats" />
+<img height="180" src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/stats.svg#gh-dark-mode-only" alt="GitHub stats" />
+<img height="180" src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/top-langs-light.svg#gh-light-mode-only" alt="Top languages" />
+<img height="180" src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/top-langs.svg#gh-dark-mode-only" alt="Top languages" />
 
 <br/>
 
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/streak-light.svg" />
-  <img height="180" src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/streak.svg" alt="Contribution streak" />
-</picture>
+<img height="180" src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/streak-light.svg#gh-light-mode-only" alt="Contribution streak" />
+<img height="180" src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/streak.svg#gh-dark-mode-only" alt="Contribution streak" />
 
 <br/><br/>
 
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/trophy-light.svg" />
-  <img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/trophy.svg" alt="GitHub trophies" />
-</picture>
+<img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/trophy-light.svg#gh-light-mode-only" alt="GitHub trophies" />
+<img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/trophy.svg#gh-dark-mode-only" alt="GitHub trophies" />
 
 <br/><br/>
 
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/activity-light.svg" />
-  <img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/activity.svg" alt="Contribution activity" width="100%"/>
-</picture>
+<img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/activity-light.svg#gh-light-mode-only" alt="Contribution activity" width="100%"/>
+<img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/activity.svg#gh-dark-mode-only" alt="Contribution activity" width="100%"/>
 
 </div>
 
@@ -126,31 +116,23 @@ I'm **VincesHu (Hu Zhongyue)**, a Master's candidate at **Sun Yat-sen University
 <div align="center">
 
 <a href="https://github.com/VincesHu01/timeless-career-intelligence">
-  <picture>
-    <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/pin-timeless-career-intelligence-light.svg" />
-    <img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/pin-timeless-career-intelligence.svg" alt="timeless-career-intelligence" />
-  </picture>
+  <img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/pin-timeless-career-intelligence-light.svg#gh-light-mode-only" alt="timeless-career-intelligence" />
+  <img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/pin-timeless-career-intelligence.svg#gh-dark-mode-only" alt="timeless-career-intelligence" />
 </a>
 <a href="https://github.com/VincesHu01/ai-news-aggregator">
-  <picture>
-    <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/pin-ai-news-aggregator-light.svg" />
-    <img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/pin-ai-news-aggregator.svg" alt="ai-news-aggregator" />
-  </picture>
+  <img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/pin-ai-news-aggregator-light.svg#gh-light-mode-only" alt="ai-news-aggregator" />
+  <img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/pin-ai-news-aggregator.svg#gh-dark-mode-only" alt="ai-news-aggregator" />
 </a>
 
 <br/>
 
 <a href="https://github.com/VincesHu01/Apex-workbench">
-  <picture>
-    <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/pin-Apex-workbench-light.svg" />
-    <img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/pin-Apex-workbench.svg" alt="Apex-workbench" />
-  </picture>
+  <img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/pin-Apex-workbench-light.svg#gh-light-mode-only" alt="Apex-workbench" />
+  <img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/pin-Apex-workbench.svg#gh-dark-mode-only" alt="Apex-workbench" />
 </a>
 <a href="https://github.com/VincesHu01/douji">
-  <picture>
-    <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/pin-douji-light.svg" />
-    <img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/pin-douji.svg" alt="douji" />
-  </picture>
+  <img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/pin-douji-light.svg#gh-light-mode-only" alt="douji" />
+  <img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/cards/pin-douji.svg#gh-dark-mode-only" alt="douji" />
 </a>
 
 </div>
@@ -169,11 +151,9 @@ I'm **VincesHu (Hu Zhongyue)**, a Master's candidate at **Sun Yat-sen University
 
 <div align="center">
 
-<!-- snake.yml 在 output 分支上同时生成了深色版和浅色版，用 <picture> 切换 -->
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@output/github-contribution-grid-snake.svg" />
-  <img alt="snake" src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@output/github-contribution-grid-snake-dark.svg" width="100%" />
-</picture>
+<!-- snake.yml 在 output 分支上同时生成了深色版和浅色版，按主题切换 -->
+<img alt="snake" src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@output/github-contribution-grid-snake.svg#gh-light-mode-only" width="100%" />
+<img alt="snake" src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@output/github-contribution-grid-snake-dark.svg#gh-dark-mode-only" width="100%" />
 
 </div>
 
