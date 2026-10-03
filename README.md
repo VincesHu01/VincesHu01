@@ -211,7 +211,7 @@ coffee: ☕ x 3 / day
 
 <a href="https://github.com/VincesHu01"><img src="https://img.shields.io/badge/GitHub-VincesHu01-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
 <a href="https://www.linkedin.com/in/vinces-hu-4b58a2430/"><img src="https://img.shields.io/badge/LinkedIn-Vinces%20Hu-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-<a href="mailto:vinceshu01@gmail.com"><img src="https://img.shields.io/badge/Email-vinceshu01@gmail.com-ea4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+<a href="mailto:vinceshu0120@gmail.com"><img src="https://img.shields.io/badge/Email-vinceshu0120@gmail.com-ea4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 
 <br/><br/>
 
