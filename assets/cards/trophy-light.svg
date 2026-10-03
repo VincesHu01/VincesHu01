@@ -25,7 +25,7 @@
             stroke="#e1e4e8"
             fill="#FFF"
             stroke-opacity="0"
-            fill-opacity="0"
+            fill-opacity="1"
           />
           
   
@@ -105,7 +105,7 @@
             stroke="#e1e4e8"
             fill="#FFF"
             stroke-opacity="0"
-            fill-opacity="0"
+            fill-opacity="1"
           />
           
   
@@ -115,7 +115,7 @@
     
     <stop offset="0%" stop-color="#A18D66"/>
     <stop offset="70%" stop-color="#A18D66"/>
-    <stop offset="100%" stop-color="#A18D66"/>
+    <stop offset="100%" stop-color="#816D96"/>
     
     </linearGradient>
   </defs>
@@ -185,7 +185,7 @@
             stroke="#e1e4e8"
             fill="#FFF"
             stroke-opacity="0"
-            fill-opacity="0"
+            fill-opacity="1"
           />
           
   
@@ -195,7 +195,7 @@
     
       <stop offset="0%" stop-color="#777"/>
       <stop offset="50%" stop-color="#777"/>
-      <stop offset="100%" stop-color="#777"/>
+      <stop offset="100%" stop-color="#333"/>
   
     </linearGradient>
   </defs>
@@ -265,7 +265,7 @@
             stroke="#e1e4e8"
             fill="#FFF"
             stroke-opacity="0"
-            fill-opacity="0"
+            fill-opacity="1"
           />
           
   
@@ -275,7 +275,7 @@
     
       <stop offset="0%" stop-color="#777"/>
       <stop offset="50%" stop-color="#777"/>
-      <stop offset="100%" stop-color="#777"/>
+      <stop offset="100%" stop-color="#333"/>
   
     </linearGradient>
   </defs>
@@ -345,7 +345,7 @@
             stroke="#e1e4e8"
             fill="#FFF"
             stroke-opacity="0"
-            fill-opacity="0"
+            fill-opacity="1"
           />
           
   
@@ -355,7 +355,7 @@
     
       <stop offset="0%" stop-color="#777"/>
       <stop offset="50%" stop-color="#777"/>
-      <stop offset="100%" stop-color="#777"/>
+      <stop offset="100%" stop-color="#333"/>
   
     </linearGradient>
   </defs>
@@ -425,7 +425,7 @@
             stroke="#e1e4e8"
             fill="#FFF"
             stroke-opacity="0"
-            fill-opacity="0"
+            fill-opacity="1"
           />
           
   
@@ -435,7 +435,7 @@
     
       <stop offset="0%" stop-color="#777"/>
       <stop offset="50%" stop-color="#777"/>
-      <stop offset="100%" stop-color="#777"/>
+      <stop offset="100%" stop-color="#333"/>
   
     </linearGradient>
   </defs>
@@ -505,7 +505,7 @@
             stroke="#e1e4e8"
             fill="#FFF"
             stroke-opacity="0"
-            fill-opacity="0"
+            fill-opacity="1"
           />
           
   
@@ -515,7 +515,7 @@
     
       <stop offset="0%" stop-color="#777"/>
       <stop offset="50%" stop-color="#777"/>
-      <stop offset="100%" stop-color="#777"/>
+      <stop offset="100%" stop-color="#333"/>
   
     </linearGradient>
   </defs>
@@ -585,7 +585,7 @@
             stroke="#e1e4e8"
             fill="#FFF"
             stroke-opacity="0"
-            fill-opacity="0"
+            fill-opacity="1"
           />
           
   
@@ -595,7 +595,7 @@
     
       <stop offset="0%" stop-color="#777"/>
       <stop offset="50%" stop-color="#777"/>
-      <stop offset="100%" stop-color="#777"/>
+      <stop offset="100%" stop-color="#333"/>
   
     </linearGradient>
   </defs>
@@ -665,7 +665,7 @@
             stroke="#e1e4e8"
             fill="#FFF"
             stroke-opacity="0"
-            fill-opacity="0"
+            fill-opacity="1"
           />
           
   
@@ -675,7 +675,7 @@
     
       <stop offset="0%" stop-color="#777"/>
       <stop offset="50%" stop-color="#777"/>
-      <stop offset="100%" stop-color="#777"/>
+      <stop offset="100%" stop-color="#333"/>
   
     </linearGradient>
   </defs>
@@ -745,7 +745,7 @@
             stroke="#e1e4e8"
             fill="#FFF"
             stroke-opacity="0"
-            fill-opacity="0"
+            fill-opacity="1"
           />
           
   
@@ -755,7 +755,7 @@
     
       <stop offset="0%" stop-color="#777"/>
       <stop offset="50%" stop-color="#777"/>
-      <stop offset="100%" stop-color="#777"/>
+      <stop offset="100%" stop-color="#333"/>
   
     </linearGradient>
   </defs>
@@ -825,7 +825,7 @@
             stroke="#e1e4e8"
             fill="#FFF"
             stroke-opacity="0"
-            fill-opacity="0"
+            fill-opacity="1"
           />
           
   
@@ -835,7 +835,7 @@
     
       <stop offset="0%" stop-color="#777"/>
       <stop offset="50%" stop-color="#777"/>
-      <stop offset="100%" stop-color="#777"/>
+      <stop offset="100%" stop-color="#333"/>
   
     </linearGradient>
   </defs>
@@ -905,7 +905,7 @@
             stroke="#e1e4e8"
             fill="#FFF"
             stroke-opacity="0"
-            fill-opacity="0"
+            fill-opacity="1"
           />
           
   
@@ -915,7 +915,7 @@
     
       <stop offset="0%" stop-color="#777"/>
       <stop offset="50%" stop-color="#777"/>
-      <stop offset="100%" stop-color="#777"/>
+      <stop offset="100%" stop-color="#333"/>
   
     </linearGradient>
   </defs>
@@ -985,7 +985,7 @@
             stroke="#e1e4e8"
             fill="#FFF"
             stroke-opacity="0"
-            fill-opacity="0"
+            fill-opacity="1"
           />
           
   
@@ -995,7 +995,7 @@
     
       <stop offset="0%" stop-color="#777"/>
       <stop offset="50%" stop-color="#777"/>
-      <stop offset="100%" stop-color="#777"/>
+      <stop offset="100%" stop-color="#333"/>
   
     </linearGradient>
   </defs>
