@@ -1,0 +1,24 @@
+<svg width="440" height="238" viewBox="0 0 440 238" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Academic Deliverables skill project card">
+  <style>
+    @media (prefers-color-scheme: light) {
+      .bg{fill:#ffffff}.panel{fill:#f8fafc;stroke:#f9a8d4}.title{fill:#831843}.text{fill:#475569}.muted{fill:#64748b}.code{fill:#ffffff;stroke:#e2e8f0}
+    }
+    .scan{animation:scan 3.8s ease-in-out infinite}@keyframes scan{0%,100%{transform:translateY(0)}50%{transform:translateY(69px)}}
+  </style>
+  <defs><linearGradient id="edge2"><stop stop-color="#ec4899"/><stop offset=".5" stop-color="#8b5cf6"/><stop offset="1" stop-color="#22d3ee"/></linearGradient></defs>
+  <rect class="bg" width="440" height="238" rx="18" fill="#080b14"/>
+  <rect class="panel" x="1.5" y="1.5" width="437" height="235" rx="17" fill="#0d1117" stroke="url(#edge2)" stroke-width="3"/>
+  <circle cx="28" cy="25" r="5" fill="#ef4444"/><circle cx="44" cy="25" r="5" fill="#fbbf24"/><circle cx="60" cy="25" r="5" fill="#22c55e"/>
+  <text x="410" y="30" text-anchor="end" font-family="monospace" font-size="11" fill="#f472b6">CODEX SKILL · QA</text>
+  <text class="title" x="24" y="76" font-family="-apple-system,'Segoe UI',sans-serif" font-size="25" font-weight="800" fill="#fdf2f8">Academic Deliverables</text>
+  <text class="text" x="24" y="102" font-family="-apple-system,'Segoe UI',sans-serif" font-size="14" fill="#cbd5e1">Personal rules that turn “done” into “done + verified”.</text>
+  <g transform="translate(24 120)">
+    <rect class="code" width="392" height="82" rx="12" fill="#111827" stroke="#334155"/>
+    <text x="16" y="24" font-family="monospace" font-size="12" fill="#a78bfa">✓ skill metadata</text>
+    <text x="16" y="45" font-family="monospace" font-size="12" fill="#f472b6">✓ PPT color + font audit</text>
+    <text x="16" y="66" font-family="monospace" font-size="12" fill="#22d3ee">✓ DOCX OMML + layout audit</text>
+    <rect class="scan" x="2" y="5" width="388" height="2" fill="url(#edge2)" opacity=".75"/>
+    <g transform="translate(302 13)"><circle cx="30" cy="27" r="25" fill="none" stroke="#22c55e" stroke-width="4"/><text x="30" y="32" text-anchor="middle" font-family="monospace" font-weight="700" font-size="14" fill="#22c55e">PASS</text></g>
+  </g>
+  <text class="muted" x="24" y="222" font-family="monospace" font-size="11" fill="#94a3b8">43-thread feedback model · deterministic checks · CI</text>
+</svg>
