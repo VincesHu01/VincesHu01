@@ -155,10 +155,10 @@ I have shipped real product and operations work at **TikTok Shop** and **Poizon*
 
 <div align="center">
 
-<img height="180" src="assets/cards/stats-light.svg#gh-light-mode-only" alt="GitHub stats" />
-<img height="180" src="assets/cards/stats.svg#gh-dark-mode-only" alt="GitHub stats" />
-<img height="180" src="assets/cards/top-langs-light.svg#gh-light-mode-only" alt="Top languages" />
-<img height="180" src="assets/cards/top-langs.svg#gh-dark-mode-only" alt="Top languages" />
+<img width="49%" src="assets/cards/stats-light.svg#gh-light-mode-only" alt="GitHub stats" />
+<img width="49%" src="assets/cards/stats.svg#gh-dark-mode-only" alt="GitHub stats" />
+<img width="49%" src="assets/cards/top-langs-light.svg#gh-light-mode-only" alt="Top languages" />
+<img width="49%" src="assets/cards/top-langs.svg#gh-dark-mode-only" alt="Top languages" />
 
 <br/>
 
@@ -190,18 +190,15 @@ I have shipped real product and operations work at **TikTok Shop** and **Poizon*
 
 ## 🌱 Now
 
-```yaml
-mission: turn messy workflows into useful AI products
-building:
-  - 🎨 PPT palette intelligence for WPS / PowerPoint
-  - 🧠 reusable Codex skills with deterministic quality checks
-  - 🔎 local-first search and personal intelligence systems
-learning:
-  - AI product strategy
-  - agentic workflow design
-  - cross-border e-commerce
-coffee: ☕ x 3 / day
-```
+<img src="assets/now-console.svg" width="100%" alt="Current mission, active builds and learning orbit" />
+
+## ✦ ChatGPT Token Telemetry
+
+<a href="https://chatgpt.com/u/vinceshu01">
+  <img src="assets/chatgpt-activity.svg" width="100%" alt="ChatGPT daily token consumption, lifetime total, peak and streaks" />
+</a>
+
+<sub>Tracks actual Work / Codex token consumption by day — not remaining quota. Automatically refreshed from my ChatGPT profile analytics.</sub>
 
 <a id="connect"></a>
 
