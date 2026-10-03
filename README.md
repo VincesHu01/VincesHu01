@@ -1,50 +1,123 @@
 <div align="center">
 
-<!-- ▍BANNER -->
-<img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/banner.svg" width="100%"/>
+<img src="assets/banner.svg" width="100%" alt="VincesHu — AI product builder" />
 
-<!-- ▍ANIMATED AVATAR: rotating gradient dashed ring + color cycling -->
-<p>
-  <a href="https://github.com/VincesHu01">
-    <img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/avatar-anim.svg" width="160"/>
-  </a>
-</p>
-
-<!-- ▍SPARKLES row -->
-<img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/sparkles.svg" />
+<a href="https://github.com/VincesHu01"><img src="assets/avatar-anim.svg" width="118" alt="VincesHu animated avatar" /></a>
 
 <br/>
 
-<!-- ▍ANIMATED TERMINAL CARD with blinking cursor -->
-<a href="https://github.com/VincesHu01">
-  <img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/typing-card.svg" alt="terminal" />
-</a>
-
-</div>
-
-<img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/wave.svg" width="100%"/>
-
-## 🧑‍💻 &nbsp;About
-
-I'm **VincesHu (Hu Zhongyue)**, a Master's candidate at **Sun Yat-sen University** who lives at the intersection of AI, product, and growth. I've shipped real products at **TikTok Shop** (6 mo) and **Poizon** (4 mo), and I care about turning fuzzy user problems into working software — especially where LLMs meet messy real-world workflows.
-
-**Currently focused on:** Product Management (AI / Strategy / Monetization / Platform) · Strategy Operations · E-commerce Operations
+<img src="assets/sparkles.svg" alt="Animated sparkles" />
 
 <br/>
 
-<div align="center">
+<a href="https://github.com/VincesHu01"><img src="assets/typing-card.svg" width="720" alt="VincesHu terminal profile" /></a>
 
-<img src="https://img.shields.io/badge/TikTok_Shop-Product_%E2%80%85Growth%C2%A0%C2%B7%C2%A06_mo-010101?style=for-the-badge&logo=tiktok&logoColor=white" />
-<img src="https://img.shields.io/badge/Poizon%20%28DeWu%29-Operations%C2%A0%C2%B7%C2%A04_mo-FF6A39?style=for-the-badge&logo=shopify&logoColor=white" />
-<img src="https://img.shields.io/badge/SYSU-MSc%C2%A0Candidate-8b5cf6?style=for-the-badge&logo=minutemailer&logoColor=white" />
+<br/><br/>
+
+[`ABOUT`](#about) · [`LATEST BUILDS`](#latest-builds) · [`SHIPPED`](#shipped-systems) · [`STACK`](#capability-map) · [`SIGNAL`](#signal-dashboard) · [`CONNECT`](#connect)
+
+<br/>
+
+![AI Product](https://img.shields.io/badge/AI_PRODUCT-BUILDING_NOW-8b5cf6?style=for-the-badge&logo=openai&logoColor=white)
+![Build in Public](https://img.shields.io/badge/BUILD_IN_PUBLIC-SHIP_%E2%86%92_LEARN_%E2%86%92_REPEAT-ec4899?style=for-the-badge&logo=github&logoColor=white)
+![Location](https://img.shields.io/badge/BASED_IN-ZHUHAI%2C_CHINA-06b6d4?style=for-the-badge&logo=googlemaps&logoColor=white)
 
 </div>
 
-## 🛠️ &nbsp;Tech Stack
+<img src="assets/wave.svg" width="100%" alt="section divider" />
+
+<a id="about"></a>
+
+## 🧑‍💻 About
+
+I'm **VincesHu (Hu Zhongyue)** — a Master's candidate at **Sun Yat-sen University** working where **AI, product, and growth** overlap.
+
+I turn fuzzy user problems into software people can actually use. My operating loop is simple:
+
+> **find the friction → model the workflow → build the system → ship → learn from reality**
+
+I have shipped real product and operations work at **TikTok Shop** and **Poizon**, and I now build AI agents, local-first tools, automation systems, and product intelligence workflows in public.
 
 <div align="center">
 
-### 🌐 Languages
+![TikTok Shop](https://img.shields.io/badge/TikTok_Shop-Product_%E2%80%85Growth%C2%A0%C2%B7%C2%A06_mo-010101?style=for-the-badge&logo=tiktok&logoColor=white)
+![Poizon](https://img.shields.io/badge/Poizon_%28DeWu%29-Operations%C2%A0%C2%B7%C2%A04_mo-FF6A39?style=for-the-badge&logo=shopify&logoColor=white)
+![SYSU](https://img.shields.io/badge/SYSU-MSc%C2%A0Candidate-8b5cf6?style=for-the-badge&logo=minutemailer&logoColor=white)
+
+</div>
+
+<a id="latest-builds"></a>
+
+## ⚡ Latest Builds
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/VincesHu01/wps-ppt-recolor"><img src="assets/build-wps.svg" width="100%" alt="PPT Recolor Engine" /></a>
+      <br/>
+      <b>PPT Recolor Engine</b><br/>
+      Reads the palette a deck actually uses, then remaps pasted diagrams, gradients and charts without flattening their visual hierarchy.
+      <br/><br/>
+      <a href="https://github.com/VincesHu01/wps-ppt-recolor"><code>VIEW SOURCE →</code></a>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/VincesHu01/academic-deliverables"><img src="assets/build-academic.svg" width="100%" alt="Academic Deliverables Codex Skill" /></a>
+      <br/>
+      <b>Academic Deliverables Skill</b><br/>
+      Turns 43 threads of real revision feedback into reusable production rules and deterministic PPTX/DOCX quality checks.
+      <br/><br/>
+      <a href="https://github.com/VincesHu01/academic-deliverables"><code>VIEW SOURCE →</code></a>
+    </td>
+  </tr>
+</table>
+
+<a id="shipped-systems"></a>
+
+## 🚀 Shipped Systems
+
+<div align="center">
+
+<a href="https://github.com/VincesHu01/timeless-career-intelligence#gh-light-mode-only"><img src="assets/cards/pin-timeless-career-intelligence-light.svg" alt="timeless-career-intelligence" /></a>
+<a href="https://github.com/VincesHu01/timeless-career-intelligence#gh-dark-mode-only"><img src="assets/cards/pin-timeless-career-intelligence.svg" alt="timeless-career-intelligence" /></a>
+<a href="https://github.com/VincesHu01/ai-news-aggregator#gh-light-mode-only"><img src="assets/cards/pin-ai-news-aggregator-light.svg" alt="ai-news-aggregator" /></a>
+<a href="https://github.com/VincesHu01/ai-news-aggregator#gh-dark-mode-only"><img src="assets/cards/pin-ai-news-aggregator.svg" alt="ai-news-aggregator" /></a>
+
+<br/>
+
+<a href="https://github.com/VincesHu01/Apex-workbench#gh-light-mode-only"><img src="assets/cards/pin-Apex-workbench-light.svg" alt="Apex-workbench" /></a>
+<a href="https://github.com/VincesHu01/Apex-workbench#gh-dark-mode-only"><img src="assets/cards/pin-Apex-workbench.svg" alt="Apex-workbench" /></a>
+<a href="https://github.com/VincesHu01/douji#gh-light-mode-only"><img src="assets/cards/pin-douji-light.svg" alt="douji" /></a>
+<a href="https://github.com/VincesHu01/douji#gh-dark-mode-only"><img src="assets/cards/pin-douji.svg" alt="douji" /></a>
+
+</div>
+
+<details>
+<summary><b>🧭 The product thesis behind each system</b></summary>
+
+- **[timeless-career-intelligence](https://github.com/VincesHu01/timeless-career-intelligence)** — turns scattered hiring signals into a role ability map and focused learning path.
+- **[ai-news-aggregator](https://github.com/VincesHu01/ai-news-aggregator)** — compresses information overload into the few AI signals that actually matter.
+- **[Apex-workbench](https://github.com/VincesHu01/Apex-workbench)** — a beautiful, zero-account life dashboard for people who dislike bloated SaaS.
+- **[douji](https://github.com/VincesHu01/douji)** — indexes local Doubao history and jumps directly to the exact matching conversation turn.
+
+</details>
+
+<img src="assets/wave.svg" width="100%" alt="section divider" />
+
+<a id="capability-map"></a>
+
+## 🪐 Capability Map
+
+<div align="center">
+
+<img src="assets/capability-map.svg" width="100%" alt="AI product engineering capability constellation" />
+
+</div>
+
+<details>
+<summary><b>🛠️ Expand the full stack</b></summary>
+
+### Core languages
+
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Swift](https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=swift&logoColor=white)
@@ -53,7 +126,8 @@ I'm **VincesHu (Hu Zhongyue)**, a Master's candidate at **Sun Yat-sen University
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 ![Shell](https://img.shields.io/badge/Shell-121011?style=flat-square&logo=gnubash&logoColor=white)
 
-### 🤖 AI / ML / Data
+### AI, ML and data
+
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
@@ -64,7 +138,8 @@ I'm **VincesHu (Hu Zhongyue)**, a Master's candidate at **Sun Yat-sen University
 ![CUDA](https://img.shields.io/badge/CUDA-76B900?style=flat-square&logo=nvidia&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=sqlite&logoColor=white)
 
-### 🚀 Tools & Platforms
+### Shipping tools
+
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![macOS](https://img.shields.io/badge/macOS-000000?style=flat-square&logo=apple&logoColor=white)
@@ -72,27 +147,13 @@ I'm **VincesHu (Hu Zhongyue)**, a Master's candidate at **Sun Yat-sen University
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
 ![Notion](https://img.shields.io/badge/Notion-000000?style=flat-square&logo=notion&logoColor=white)
 
-</div>
+</details>
 
-<img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/wave.svg" width="100%"/>
+<a id="signal-dashboard"></a>
 
-## 📊 &nbsp;Dashboard
+## 📡 Signal Dashboard
 
 <div align="center">
-
-<!-- 卡片由 .github/workflows/readme-cards.yml 每天自动重新生成并提交，
-     README 只引用仓库内的静态 SVG，避免公共 vercel/heroku 实例被暂停时出现裂图。
-
-     每张卡片有两套：xxx-light.svg（浅色）/ xxx.svg（深色），
-     用 GitHub 官方的 #gh-light-mode-only / #gh-dark-mode-only 后缀按主题显示。
-
-     三个坑，改这里时别踩：
-     1. GitHub 的 HTML 过滤器会剥掉 <picture>/<source>，只能用 URL 片段写法。
-     2. 必须用「仓库相对路径」。用 cdn.jsdelivr.net 这类外链会被 camo 代理重写，
-        片段被转码成十六进制，GitHub 的 CSS [href$="#gh-light-mode-only"] 就匹配不上，
-        结果是深浅两套图同时显示。
-     3. 本地 SVG（banner / typing-card / wave）不依赖这套机制，
-        它们内部自带 @media (prefers-color-scheme)，所以可以继续用 CDN 绝对地址。 -->
 
 <img height="180" src="assets/cards/stats-light.svg#gh-light-mode-only" alt="GitHub stats" />
 <img height="180" src="assets/cards/stats.svg#gh-dark-mode-only" alt="GitHub stats" />
@@ -111,82 +172,49 @@ I'm **VincesHu (Hu Zhongyue)**, a Master's candidate at **Sun Yat-sen University
 
 <br/><br/>
 
-<img src="assets/cards/activity-light.svg#gh-light-mode-only" alt="Contribution activity" width="100%"/>
-<img src="assets/cards/activity.svg#gh-dark-mode-only" alt="Contribution activity" width="100%"/>
+<img src="assets/cards/activity-light.svg#gh-light-mode-only" alt="Contribution activity" width="100%" />
+<img src="assets/cards/activity.svg#gh-dark-mode-only" alt="Contribution activity" width="100%" />
 
 </div>
 
-<img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/wave.svg" width="100%"/>
-
-## 🌟 &nbsp;Selected Projects
+## 🐍 Contribution Snake
 
 <div align="center">
 
-<a href="https://github.com/VincesHu01/timeless-career-intelligence#gh-light-mode-only"><img src="assets/cards/pin-timeless-career-intelligence-light.svg" alt="timeless-career-intelligence" /></a>
-<a href="https://github.com/VincesHu01/timeless-career-intelligence#gh-dark-mode-only"><img src="assets/cards/pin-timeless-career-intelligence.svg" alt="timeless-career-intelligence" /></a>
-<a href="https://github.com/VincesHu01/ai-news-aggregator#gh-light-mode-only"><img src="assets/cards/pin-ai-news-aggregator-light.svg" alt="ai-news-aggregator" /></a>
-<a href="https://github.com/VincesHu01/ai-news-aggregator#gh-dark-mode-only"><img src="assets/cards/pin-ai-news-aggregator.svg" alt="ai-news-aggregator" /></a>
-
-<br/>
-
-<a href="https://github.com/VincesHu01/Apex-workbench#gh-light-mode-only"><img src="assets/cards/pin-Apex-workbench-light.svg" alt="Apex-workbench" /></a>
-<a href="https://github.com/VincesHu01/Apex-workbench#gh-dark-mode-only"><img src="assets/cards/pin-Apex-workbench.svg" alt="Apex-workbench" /></a>
-<a href="https://github.com/VincesHu01/douji#gh-light-mode-only"><img src="assets/cards/pin-douji-light.svg" alt="douji" /></a>
-<a href="https://github.com/VincesHu01/douji#gh-dark-mode-only"><img src="assets/cards/pin-douji.svg" alt="douji" /></a>
+<img alt="Contribution snake" src="assets/cards/snake-light.svg#gh-light-mode-only" width="100%" />
+<img alt="Contribution snake" src="assets/cards/snake.svg#gh-dark-mode-only" width="100%" />
 
 </div>
 
-### 📌 Why these exist
+<img src="assets/wave.svg" width="100%" alt="section divider" />
 
-- 🧭 **[timeless-career-intelligence](https://github.com/VincesHu01/timeless-career-intelligence)** — *Job seekers in China's internet industry fly blind on what PM/Ops roles actually demand. This system turns scattered hiring signals into a clear ability map and a focused learning path.*
-
-- 🗞️ **[ai-news-aggregator](https://github.com/VincesHu01/ai-news-aggregator)** — *Information overload kills focus. LLMs summarize and forecast the news so you get the 1% that actually matters, in 30 seconds.*
-
-- ⚡ **[Apex-workbench](https://github.com/VincesHu01/Apex-workbench)** — *People who hate bloated SaaS still want a beautiful life dashboard. This single-file, zero-framework app ships that without an account, server, or subscription.*
-
-- 🐦 **[douji](https://github.com/VincesHu01/douji)** — *We've all stared at Doubao saying "I know I solved something great here last week." This macOS tool indexes every local chat turn and jumps you straight to it.*
-
-## 🐍 &nbsp;Contribution Snake
-
-<div align="center">
-
-<!-- snake.yml 在 output 分支上同时生成了深色版和浅色版，按主题切换 -->
-<img alt="snake" src="assets/cards/snake-light.svg#gh-light-mode-only" width="100%" />
-<img alt="snake" src="assets/cards/snake.svg#gh-dark-mode-only" width="100%" />
-
-</div>
-
-<img src="https://cdn.jsdelivr.net/gh/VincesHu01/VincesHu01@main/assets/wave.svg" width="100%"/>
-
-## 🌱 &nbsp;Currently
+## 🌱 Now
 
 ```yaml
-currently:
-  - 📚 Pursuing my Master's degree, head down
-  - 🤖 Building AI Agents & LLM applications in my spare time
-  - 🛠️ Designing AI plugins & skill systems that actually ship
-  - 📈 Tracking product & cross-border e-commerce opportunities
+mission: turn messy workflows into useful AI products
+building:
+  - 🎨 PPT palette intelligence for WPS / PowerPoint
+  - 🧠 reusable Codex skills with deterministic quality checks
+  - 🔎 local-first search and personal intelligence systems
+learning:
+  - AI product strategy
+  - agentic workflow design
+  - cross-border e-commerce
 coffee: ☕ x 3 / day
 ```
 
+<a id="connect"></a>
+
 <div align="center">
 
-### 🔗 &nbsp;Connect
+## 🔗 Connect
 
-<a href="https://github.com/VincesHu01">
-  <img src="https://img.shields.io/badge/GitHub-VincesHu01-181717?style=for-the-badge&logo=github&logoColor=white" />
-</a>
-<a href="https://www.linkedin.com/in/vinces-hu-4b58a2430/">
-  <img src="https://img.shields.io/badge/LinkedIn-Vinces%20Hu-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>
-<a href="mailto:vinceshu01@gmail.com">
-  <img src="https://img.shields.io/badge/Email-vinceshu01@gmail.com-ea4335?style=for-the-badge&logo=gmail&logoColor=white" />
-</a>
+<a href="https://github.com/VincesHu01"><img src="https://img.shields.io/badge/GitHub-VincesHu01-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+<a href="https://www.linkedin.com/in/vinces-hu-4b58a2430/"><img src="https://img.shields.io/badge/LinkedIn-Vinces%20Hu-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+<a href="mailto:vinceshu01@gmail.com"><img src="https://img.shields.io/badge/Email-vinceshu01@gmail.com-ea4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 
 <br/><br/>
 
----
-
-<sub>© 2026 VincesHu · Built with ☕ and too much AI</sub>
+<sub>© 2026 VincesHu · designed as a living product, not a static résumé</sub>
 
 </div>
