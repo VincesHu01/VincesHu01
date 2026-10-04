@@ -23,5 +23,9 @@ def normalize(path: Path) -> None:
 
 
 if __name__ == "__main__":
-    for arg in sys.argv[1:]:
+    targets = sys.argv[1:] or [
+        "assets/cards/top-langs.svg",
+        "assets/cards/top-langs-light.svg",
+    ]
+    for arg in targets:
         normalize(Path(arg))
