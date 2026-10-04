@@ -95,6 +95,7 @@ I have shipped real product and operations work at **TikTok Shop** and **Poizon*
 - **[timeless-career-intelligence](https://github.com/VincesHu01/timeless-career-intelligence)** — turns scattered hiring signals into a role ability map and focused learning path.
 - **[ai-news-aggregator](https://github.com/VincesHu01/ai-news-aggregator)** — compresses information overload into the few AI signals that actually matter.
 - **[Apex-workbench](https://github.com/VincesHu01/Apex-workbench)** — a beautiful, zero-account life dashboard for people who dislike bloated SaaS.
+- **[douji](https://github.com/VincesHu01/douji)** — indexes local Doubao history and jumps directly to the exact matching conversation turn.
 </details>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/wave-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/wave-light.svg"><img src="assets/wave-light.svg" width="100%" alt="section divider" /></picture>
