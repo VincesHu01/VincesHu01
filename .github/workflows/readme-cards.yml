@@ -18,7 +18,7 @@ on:
     paths:
       - ".github/workflows/readme-cards.yml"
       - ".github/scripts/activity_graph.py"
-
+      - ".github/scripts/normalize_top_langs.py"
 permissions:
   contents: write
 
@@ -82,6 +82,7 @@ jobs:
           fallback assets/cards/stats-light.svg assets/cards/stats.svg
 
           fetch assets/cards/top-langs.svg \
+
             "${GRS}/api/top-langs/?username=VincesHu01&layout=compact&title_color=8b5cf6&${T_COMMON}" \
             "${GRS_FAST}/api/top-langs/?username=VincesHu01&layout=compact&title_color=8b5cf6&${T_COMMON}"
           fetch assets/cards/top-langs-light.svg \
@@ -128,6 +129,7 @@ jobs:
           }
           pin timeless-career-intelligence 8b5cf6 6d28d9
           pin ai-news-aggregator ec4899 db2777
+          python3 .github/scripts/normalize_top_langs.py
           pin Apex-workbench 22d3ee 0e7490
           pin douji fbbf24 b45309
 
