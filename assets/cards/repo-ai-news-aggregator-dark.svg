@@ -4,6 +4,7 @@
   <defs>
     <linearGradient id="edge" x1="0" x2="1"><stop stop-color="#ec4899"/><stop offset=".55" stop-color="#ec4899"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
     <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop class="g1" stop-color="#fff" stop-opacity=".085"/><stop class="g2" offset="1" stop-color="#fff" stop-opacity=".025"/></linearGradient>
+    <clipPath id="card-clip"><rect x="1" y="1" width="466" height="176" rx="15"/></clipPath>
     <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path class="grid" d="M24 0H0V24" fill="none" stroke="#94a3b8" stroke-opacity=".055"/></pattern>
     <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
     <style>
@@ -14,7 +15,7 @@
   <rect class="bg" width="468" height="178" rx="16"/>
   <rect width="468" height="178" rx="16" fill="url(#grid)"/>
   <rect class="frame" x="1" y="1" width="466" height="176" rx="15"/>
-  <rect x="1" y="1" width="466" height="3" rx="1.5" fill="url(#edge)"/>
+  <rect x="1" y="1" width="466" height="3" fill="url(#edge)" clip-path="url(#card-clip)"/>
   <g transform="translate(29 27)" fill="none" stroke="#ec4899" stroke-width="1.8"><path d="M3 2h13a2 2 0 0 1 2 2v15l-5-3-5 3V6H3z"/><circle cx="18" cy="4" r="3" fill="#ec4899" filter="url(#glow)" class="pulse"/></g>
   <text x="59" y="48" class="name">ai-news-aggregator</text>
   <text x="438" y="44" text-anchor="end" font-family="monospace" font-size="10" fill="#ec4899">LIVE METADATA</text>

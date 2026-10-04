@@ -12,6 +12,29 @@ import argparse
 from pathlib import Path
 
 
+def ensure_repo_card_clip(source: str) -> str:
+    """Keep the card accent rail inside the rounded frame.
+
+    This also upgrades cards generated before project_cards.py gained the
+    clip path, so a theme bake can repair the currently published assets.
+    """
+    if 'width="468" height="178"' not in source or 'class="frame"' not in source:
+        return source
+    if 'id="card-clip"' not in source:
+        anchor = '    <pattern id="grid"'
+        source = source.replace(
+            anchor,
+            '    <clipPath id="card-clip"><rect x="1" y="1" width="466" height="176" rx="15"/></clipPath>\n' + anchor,
+            1,
+        )
+    source = source.replace(
+        '<rect x="1" y="1" width="466" height="3" rx="1.5" fill="url(#edge)"/>',
+        '<rect x="1" y="1" width="466" height="3" fill="url(#edge)" clip-path="url(#card-clip)"/>',
+        1,
+    )
+    return source
+
+
 DEFAULTS = [
     "assets/banner.svg",
     "assets/build-wps.svg",
@@ -69,7 +92,7 @@ def main() -> None:
     parser.add_argument("--root", type=Path, default=Path.cwd())
     args = parser.parse_args()
     for path in targets(args.root, args.paths):
-        source = path.read_text(encoding="utf-8")
+        source = ensure_repo_card_clip(path.read_text(encoding="utf-8"))
         if "prefers-color-scheme" not in source:
             continue
         for variant, light in (("dark", False), ("light", True)):
