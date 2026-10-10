@@ -54,18 +54,18 @@ I have shipped real product and operations work at **TikTok Shop** and **Poizon*
 <table>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/VincesHu01/wps-ppt-recolor"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/repo-latest-1-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cards/repo-latest-1-light.svg"><img src="assets/cards/repo-latest-1-light.svg" width="100%" alt="wps-ppt-recolor" /></picture></a>
+      <a href="https://github.com/VincesHu01/ai-learning-notes"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/repo-latest-1-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cards/repo-latest-1-light.svg"><img src="assets/cards/repo-latest-1-light.svg" width="100%" alt="ai-learning-notes" /></picture></a>
       <br/>
-      <b>wps-ppt-recolor</b><br/>
-      Paste a template diagram into a slide, run one command, and its colors become your deck&#x27;s colors.
+      <b>ai-learning-notes</b><br/>
+      AI learning notes covering LLM fundamentals, training and alignment, Agent systems, RAG, inference, hardware, product engineering, and safety.
       <br/><br/>
-      <a href="https://github.com/VincesHu01/wps-ppt-recolor"><code>VIEW SOURCE →</code></a>
+      <a href="https://github.com/VincesHu01/ai-learning-notes"><code>VIEW SOURCE →</code></a>
     </td>
     <td width="50%" valign="top">
       <a href="https://github.com/VincesHu01/academic-deliverables"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/repo-latest-2-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cards/repo-latest-2-light.svg"><img src="assets/cards/repo-latest-2-light.svg" width="100%" alt="academic-deliverables" /></picture></a>
       <br/>
       <b>academic-deliverables</b><br/>
-      Skill of Academic Standardized PPT &amp; Word Production for Economics &amp; Management
+      Specification skill for academic PPT and Word deliverables
       <br/><br/>
       <a href="https://github.com/VincesHu01/academic-deliverables"><code>VIEW SOURCE →</code></a>
     </td>
@@ -194,7 +194,7 @@ I have shipped real product and operations work at **TikTok Shop** and **Poizon*
 ## ✦ ChatGPT Token Telemetry
 
 <a href="https://chatgpt.com/u/vinceshu01">
-  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/chatgpt-activity-dark.svg?v=202610032043"><source media="(prefers-color-scheme: light)" srcset="assets/chatgpt-activity-light.svg?v=202610032043"><img src="assets/chatgpt-activity-light.svg?v=202610032043" width="100%" alt="ChatGPT daily token consumption, lifetime total, peak and streaks" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/chatgpt-activity-dark.svg?v=202610101021"><source media="(prefers-color-scheme: light)" srcset="assets/chatgpt-activity-light.svg?v=202610101021"><img src="assets/chatgpt-activity-light.svg?v=202610101021" width="100%" alt="ChatGPT daily token consumption, lifetime total, peak and streaks" /></picture>
 </a>
 
 <sub>Tracks actual Work / Codex token consumption by day — not remaining quota. Automatically refreshed from my ChatGPT profile analytics.</sub>

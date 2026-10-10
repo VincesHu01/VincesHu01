@@ -1,11 +1,11 @@
 {
   "username": "vinceshu01",
-  "updated_at": "2026-10-03 20:43 CST",
-  "lifetime_tokens": 1179018969,
+  "updated_at": "2026-10-10 10:21 CST",
+  "lifetime_tokens": 1426406542,
   "peak_tokens": 330000000,
   "longest_task_minutes": 349,
-  "longest_streak": 11,
-  "current_streak": 11,
+  "longest_streak": 13,
+  "current_streak": 4,
   "daily": [
     {
       "date": "2026-08-18",
@@ -157,7 +157,31 @@
     },
     {
       "date": "2026-10-03",
-      "tokens": 57415902
+      "tokens": 58323292
+    },
+    {
+      "date": "2026-10-04",
+      "tokens": 115703343
+    },
+    {
+      "date": "2026-10-05",
+      "tokens": 16372429
+    },
+    {
+      "date": "2026-10-07",
+      "tokens": 60180597
+    },
+    {
+      "date": "2026-10-08",
+      "tokens": 18370353
+    },
+    {
+      "date": "2026-10-09",
+      "tokens": 19557941
+    },
+    {
+      "date": "2026-10-10",
+      "tokens": 16295520
     }
   ],
   "sync_baseline": {

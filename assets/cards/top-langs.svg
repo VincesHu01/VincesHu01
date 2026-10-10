@@ -1,8 +1,8 @@
 
       <svg
-        width="300"
-        height="165"
-        viewBox="0 0 300 165"
+        width="467"
+        height="195"
+        viewBox="0 0 467 195"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         role="img"
@@ -92,7 +92,7 @@
           rx="12"
           height="99%"
           stroke="#e4e2e2"
-          width="299"
+          width="466"
           fill="#0d1117"
           stroke-opacity="0"
         />
@@ -100,7 +100,7 @@
         
       <g
         data-testid="card-title"
-        transform="translate(25, 35)"
+        transform="translate(108, 40)"
       >
         <g transform="translate(0, 0)">
       <text
@@ -115,7 +115,7 @@
 
         <g
           data-testid="main-card-body"
-          transform="translate(0, 55)"
+          transform="translate(83, 70)"
         >
           
     <svg data-testid="lang-items" x="25">
